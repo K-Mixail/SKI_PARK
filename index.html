@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- подключаем шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"> 
+
     <!-- подключаем стили: -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
     <div class="container">
-        <header class="page-header">
+        <header class="page-section page-header">
             <nav class="page-header__nav">
                 <ul class="main-menu flex-sb">
                     <li class="main-menu__item">
@@ -28,25 +33,119 @@
                         <a href="">Услуги</a>
                     </li>
                     <li class="main-menu__item">
-                        <img src="images/icons/lk-header.svg" alt="">
-                        <a href="">Личный кабинет</a>
+                        <a href="">
+                            <img src="images/icons/lk-header.svg" alt="">
+                            Личный кабинет
+                        </a>
                     </li>
                     <li class="main-menu__item">
-                        <img src="images/icons/tel-icon.svg" alt="">
-                        <a href="">8 800 8000 800</a>
+                        <a href="">
+                            <img src="images/icons/tel-icon.svg" alt="">
+                            8 800 8000 800
+                        </a>
                     </li>
                 </ul>
             </nav>
-
             <div class="page-header__main-content">
-                <img src="images/logo-header.svg" alt="">
-                <h1 class="title">Ski-park</h1>
+                <img class="page-header__logo" src="images/logo-header.svg" alt="">
+                <h1 class="page-header__title">Ski-park</h1>
                 <hr>
-                <span class="subtitle">Горнолыжный курорт</span>
-                <span class="slogan">Покоряй горы</span>
+                <span class="page-header__subtitle">Горнолыжный курорт</span>
+                <span class="page-header__slogan">Покоряй горы</span>
             </div>
-
         </header>
     </div>
+
+    <section class="page-section services">
+        <div class="container">
+            <h2 class="section-title">Услуги</h2>
+            <div class="services__content">
+                <div class="flex-sb">
+                    <img class="services__banner" src="images/rent-apartments.jpg" alt=""> 
+                    <div class="services__column">                   
+                        <div class="service__item">
+                            <h3 class="service__subtite">Аренда жилья</h3>
+                            <p>Комплекс из небольших комфортабельных домиков
+                            для проживания любителей кататься на горных
+                            лыжах и сноубордах.</p>
+                            <a href="">
+                                Подробнее 
+                                <img src="images/" alt="">
+                            </a>
+                        </div>
+                        <div class="service__item">
+                            <h3 class="service__subtite">Аренда оборудования</h3>
+                            <p>Служба проката оснащена новым снаряжением ведущих
+                                мировых брендов.</p>
+                            <a href="">
+                                Подробнее 
+                                <img src="images/" alt="">
+                            </a>
+                        </div>
+                        <div class="service__item">
+                            <h3 class="service__subtite">Горнолыжные туры</h3>
+                            <p>Исследуем всевозможные линии спуска в официальной зоне курорта,
+                                а также в зоне бэккантри. </p>
+                            <a href="">
+                                Подробнее 
+                                <img src="images/" alt="">
+                            </a>
+                        </div>
+                        <div class="service__item">
+                            <h3 class="service__subtite">Услуги инструкторов</h3>
+                            <p>Команда профессионалов, научит кататься на лыжах и сноуборде.</p>
+                            <a href="">
+                                Подробнее 
+                                <img src="images/" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      
+    </section>
+
+    <section class="page-section events">
+        <div class="container">
+            <h2 class="section-title">Ближайшие события в Ski-park</h2>
+            <div class="events__content">
+                <div class="events__item">
+                    <img src="images/event1.jpg" alt="">
+                    <div class="events__info">
+                        <p class="events__data">9 декабря 2022</p>
+                        <p class="events__main">День открытия горнолыжного
+                            сезона в Ski-park</p>
+                        <a class="btn btn--primary events__btn" href="">Подробнее</a>
+                    </div>
+                </div>
+                <div class="events__item">
+                    <img src="images/event2.jpg" alt="">
+                    <div class="events__info">
+                        <p class="events__data">31 декабря 2022</p>
+                        <p class="events__main">Встречаем новый год <br>
+                            в Ski-park вместе</p>
+                        <a class="btn btn--primary events__btn" href="">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="page-section ski-pass">
+        <div class="container">
+        <div class="flex-sb">
+            <div class="ski-pass__content">
+                <h2 class="section-title">Ski-pass</h2>
+                <p>Ski-pass – электронный пропуск на подъемники.
+                    Купи один раз, пополняй через кассу курорта, 
+                    банковской картой или в личном кабинете.</p>
+                <a class="btn btn--primary ski-pass__btn" href="">Перейти в личный кабинет</a>
+            </div>
+            <img src="images/ski-pass.svg" alt="">
+        </div>
+        </div>
+    </section>
+
+    <section></section>
 </body>
 </html>

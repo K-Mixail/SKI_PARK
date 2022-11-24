@@ -1,18 +1,39 @@
 :root {
     --color-dark: #333333;
     --color-white: #fff;
+    --color-light: #CDC2C2;
+    --color-middle: #2B4E50;
+}
 
+* {
+    box-sizing: border-box;
 }
 
 body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     background-color: var(--color-dark);
-    color: var(--color-white);
+    color: var(--color-white);    
 }
 
 /* layout */
 .container {
     width: 1140px;
     margin: 0 auto;
+}
+
+.page-section {
+    margin-bottom: 130px;
+}
+
+/* title */
+.section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    margin: 0 0 50px;  /*отступ снизу*/
+    color: var(--color-white);
 }
 
 /* flex */
@@ -26,17 +47,36 @@ body {
     ;
 } 
 
+a {
+    text-decoration: none;
+    color: var(--color-white);
+}
 
 /* clear */
 ul {
     list-style-type: none;   
     text-decoration: none;
-    padding: 0;
     margin: 0;
 }
 
-a {
-    text-decoration: none
+/* button */
+.btn {
+    border: 1px solid var(--color-light);
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    height: 45px;
+    padding: 0 20px; /* ширина кнопки перестраивается под содержимое */
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.btn--primary {
+    background-color: var(--color-middle);
+}
+
+.btn--primary:hover {
+
 }
 
 /* header */
@@ -48,11 +88,108 @@ a {
 
 .main-menu {
     padding: 10px;
+}
+
+.main-menu__item a {
+    text-decoration: none;
+    color: var(--color-dark);
+    font-weight: 600;
+}
+
+.page-header__main-content {
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.page-header__main-content hr {
+    width: 230px;
+    color: var(--color-dark);
+}
+
+.page-header__title {
+    margin: 0;
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+}
+
+.page-header__subtitle {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+/* services */
+
+.service__item {
+    width: 520px;
+    height: 175px;
+    border: 1px solid var(--color-light);
+    box-sizing: border-box;
+    padding-left: 35px;
+    padding-right: 50px;
+    margin-bottom: 30px;
+}
+
+.service__subtite {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+/* events */
+.events {
+    background-color: var(--color-middle);
+    padding-top: 130px;
+    padding-left: 70px;
+}
+
+.events__info {
+    position: relative;
+    left: 125px;
+    bottom: 160px;
+    width: 370px;
+    height: 262px;
+    background-color: var(--color-dark);
+    border: 1px solid var(--color-light);
+    padding: 0 25px;
+}
+
+.events__data {
+    color: var(--color-light);
+}
+
+.events__main {
+    font-size: 20px;
+    line-height: 130%;
+}
+
+.events__btn {
+    margin-top: 50px;
+}
+
+.events__content {
+    display: flex;
+    column-gap: 25px;
+}
+
+
+/* ski-pass__content */
+.ski-pass__content {
 
 }
 
-/* .img {
-    width: 100%;
-height: 100%;
-object-fit: cover;
-} */
+.ski-pass__content p {
+    width: 410px;
+}
+
+.ski-pass__btn {
+    margin-top: 20px;
+}
+
+/*  */
