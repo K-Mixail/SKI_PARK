@@ -275,8 +275,17 @@ ul {
     background-color: var(--color-middle);
   }
 
+  /* sidebar__items */
   .sidebar {
     position: fixed;
     top: 30px;
  
+  }
+
+  .sidebar__item {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: 20px;
   }
