@@ -1,7 +1,7 @@
 :root {
     --color-dark: #333333;
     --color-white: #fff;
-    --color-light: #CDC2C2;
+    --color-grey: #A8A2A2;
     --color-middle: #2B4E50;
 }
 
@@ -57,19 +57,20 @@ ul {
     list-style-type: none;   
     text-decoration: none;
     margin: 0;
+    padding: 0;
 }
 
 /* button */
 .btn {
-    border: 1px solid var(--color-light);
+    border: 1px solid var(--color-grey);
     box-sizing: border-box;
     display: inline-flex;
     align-items: center;
     color: var(--color-white);
     height: 45px;
-    padding: 0 20px; /* ширина кнопки перестраивается под содержимое */
     font-weight: 600;
     font-size: 14px;
+    border-radius: 2px;
 }
 
 .btn--primary {
@@ -99,6 +100,12 @@ ul {
     text-decoration: none;
     color: var(--color-dark);
     font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.main-menu__item a img {
+    margin-right: 10px;
 }
 
 .page-header__main-content {
@@ -129,15 +136,26 @@ ul {
 }
 
 /* services */
+.services__column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
 .service__item {
     width: 520px;
     height: 175px;
-    border: 1px solid var(--color-light);
+    border: 1px solid var(--color-grey);
     box-sizing: border-box;
     padding-left: 35px;
     padding-right: 50px;
-    margin-bottom: 30px;
+}
+
+.service__item a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    align-content: center;
 }
 
 .service__subtite {
@@ -161,12 +179,12 @@ ul {
     width: 370px;
     height: 262px;
     background-color: var(--color-dark);
-    border: 1px solid var(--color-light);
+    border: 1px solid var(--color-grey);
     padding: 0 25px;
 }
 
 .events__data {
-    color: var(--color-light);
+    color: var(--color-grey);
 }
 
 .events__main {
@@ -176,6 +194,8 @@ ul {
 
 .events__btn {
     margin-top: 50px;
+    width: 150px;
+    padding-left: 32px;
 }
 
 .events__content {
@@ -194,18 +214,17 @@ ul {
 }
 
 .ski-pass__btn {
+    width: 275px;
     margin-top: 20px;
+    padding-left: 32px;
 }
 
 /* contacts */
-.contacts {
-    margin-bottom: 60px;
-}
 
 .contact__content {
     width: 560px;
     height: 467px;
-    border: 1px solid var(--color-light);
+    border: 1px solid var(--color-grey);
     padding: 25px;
 }
     
@@ -214,7 +233,7 @@ ul {
     height: 45px;
     background-color: var(--color-dark);
     margin-bottom: 20px;
-    border: 1px solid var(--color-light);  
+    border: 1px solid var(--color-grey);  
     padding-left: 10px;
   }
 
@@ -243,6 +262,10 @@ ul {
     align-items: center;
   }
   
+.contact-form__btn {
+    width: 227px;
+}
+
   ::placeholder {
     color: var(--color-white);
   }
@@ -254,5 +277,6 @@ ul {
 
   .sidebar {
     position: fixed;
-    top: 30px; 
+    top: 30px;
+ 
   }
