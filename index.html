@@ -195,19 +195,21 @@
         </div>
     </section>
 
-    <section class="page-section contacts">
+    <section class="page-section contact">
         <div class="container d-flex">
             <div class="contact__content">
                 <form class="contact-form" action="">
-                    <p class="">Остались вопросы? <br>Будем рады позвонить Вам</p>
+                    <h3 class="contact-form__title">Остались вопросы? <br>Будем рады позвонить Вам</h3>
                     <input class="contact-form__item" type="text" placeholder="Имя, Фамилия">            
                     <input class="contact-form__item contact-form__item--mod-size" type="email" placeholder="Электронная почта">
                     <input class="contact-form__item contact-form__item--mod-size" type="tel" placeholder="Телефон">
                     <textarea class="contact-form__item contact-form__item--textarea" name="" placeholder="Введите сообщение"></textarea>
                     <div class="contact-form__row-submit">
-                        <input class="btn btn--secondary contact-form__btn" type="submit" value="Заказать звонок">
-                        <input class="contact-form__checkbox" type="checkbox" checked>
-                        <p>Согласие на обработку <br>персональных данных</p>              
+                        <button class="btn btn--secondary contact-form__btn">Заказать звонок</button>
+                        <label class="contact-form__terms checkbox">
+                            <input class="checkbox__input" type="checkbox" checked>
+                            <p class="checkbox__text">Согласие на обработку <br>персональных данных</p>           
+                        </label>                           
                     </div>
                 </form>
             </div>
