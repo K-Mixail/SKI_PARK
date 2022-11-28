@@ -307,17 +307,9 @@ ul {
 
 
 
-
-
-
-
-
-
-
 /* sidebar__items */
 .sidebar {
     position: fixed;
-    top: 30px; 
 }
 
 .sidebar__item a {
@@ -325,7 +317,7 @@ ul {
     flex-direction: column;
     align-items: center;
     align-content: center;
-    margin: 25px;
+    margin: 20px;
 }
 
 .sidebar__img {
