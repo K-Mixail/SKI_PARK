@@ -47,17 +47,17 @@ body {
     ;
 } 
 
-a {
-    text-decoration: none;
-    color: var(--color-white);
-}
-
 /* clear */
 ul {
     list-style-type: none;   
     text-decoration: none;
     margin: 0;
     padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
 }
 
 /* button */
@@ -82,14 +82,20 @@ ul {
 }
 
 .btn--primary:hover {
-
+    border: 1px solid var(--color-white);
 }
+
+
+/* INDEX.HTML */
 
 /* header */
 .page-header {
-    background-image: url(../images/main-banner.png);
     height: 616px;
     color: var(--color-dark);
+}
+
+.page-header--index-banner {
+    background-image: url(../images/main-banner.png);
 }
 
 .main-menu {
@@ -143,19 +149,11 @@ ul {
 }
 
 .service__item {
+    position: relative;
     width: 520px;
     height: 175px;
     border: 1px solid var(--color-grey);
-    box-sizing: border-box;
     padding-left: 35px;
-    padding-right: 50px;
-}
-
-.service__item a {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    align-content: center;
 }
 
 .service__subtite {
@@ -164,6 +162,24 @@ ul {
     font-weight: 700;
     line-height: 27px;
 }
+
+.service__item p {
+    width: 385px;
+    font-size: 14px;
+    line-height: 130%;
+}
+
+
+.service__item a {
+    position: absolute;
+    top: 140px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 14px;
+    line-height: 17px;
+}
+
 
 /* events */
 .events {
@@ -205,12 +221,13 @@ ul {
 
 
 /* ski-pass__content */
-.ski-pass__content {
-
-}
+/* .ski-pass__content {
+    margin-left: 75px;
+} */
 
 .ski-pass__content p {
     width: 410px;
+    line-height: 130%;
 }
 
 .ski-pass__btn {
@@ -322,17 +339,29 @@ ul {
     gap: 10px;
 }
 
-
-
-
 /* sidebar__items */
+.test {
+    position: relative;
+    overflow-x: hidden;
+}
+
 .sidebar {
     position: fixed;
+    width: 120px;
+    height: 100vh;
+}
+
+.sidebar__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
 .sidebar__item a {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     align-content: center;
     margin: 20px;
@@ -341,3 +370,6 @@ ul {
 .sidebar__img {
     margin-bottom: 5px;
 }
+
+
+/* ABOUT.HTML */
