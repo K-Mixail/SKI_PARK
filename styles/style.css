@@ -328,6 +328,7 @@ a {
 .feedback-form__item {
     width: 475px;
     height: 45px;
+    
     color: var(--color-white);
     background-color: #4B4949;
     margin-bottom: 20px;
