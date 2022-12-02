@@ -247,6 +247,11 @@ a {
 }
 
 /* services */
+.services__banner { 
+    height: 786px; 
+    width: 560px; 
+}
+
 .services__column {
     display: flex;
     flex-direction: column;
@@ -269,6 +274,22 @@ a {
     position: absolute;
     top: 140px;
     gap: 10px;
+}
+
+.check:checked+::before {  
+    content: '';    
+    padding-left: 515px; 
+    padding-bottom: 169px;   
+    z-index: -1;  
+    position: absolute;  
+    top: 0; 
+    left: 0; 
+    border: 2px solid white;   
+  }
+
+.visually-hidden { 
+    position: absolute; 
+    clip: rect(0 0 0 0); 
 }
 
 /* events */
