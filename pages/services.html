@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- подключаем шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"> 
+
+    <!-- подключаем стили: -->
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <div class="test">
+        <div class="sidebar">
+            <ul class="sidebar__column">
+                <li class="sidebar__item">
+                    <a href="../index.html">
+                        <img class="sidebar__img" src="../images/icons/sidebar-logo.svg" alt="">
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="">
+                        <img class="sidebar__img" src="../images/icons/sidebar-house.svg" alt=""> 
+                        Проживание
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="">
+                        <img class="sidebar__img" src="../images/icons/sidebar-toures.svg" alt=""> 
+                        Туры
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="">
+                        <img class="sidebar__img" src="../images/icons/sidebar-LiWi.svg" alt=""> 
+                        Снаряжение
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="about.html">
+                        <img class="sidebar__img" src="../images/icons/sidebar-with-our.svg" alt=""> 
+                        О нас
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="">
+                        <img class="sidebar__img" src="../images/icons/sidebar-instructors.svg" alt=""> 
+                        Инструкторы
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="">
+                        <img class="sidebar__img" src="../images/icons/sidebar-trass.svg" alt=""> 
+                        Трассы
+                    </a>
+                </li>
+                <li class="sidebar__item">
+                    <a href="">
+                        <img class="sidebar__img" src="../images/icons/sidebar-events.svg" alt=""> 
+                        События
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <header class="page-section page-header page-header--services-banner">
+            <nav class="page-header__nav">
+                <ul class="main-menu flex-sb">
+                    <li class="main-menu__item">
+                        <a class="main-menu__map" href="">
+                            <img src="../images/icons/header-map.svg" alt="">
+                            гора Эльбрус
+                        </a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="../index.html">Главная</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="services.html">Услуги</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="">Личный кабинет</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="">
+                            <img src="../images/icons/header-tel.svg" alt="">
+                            8 800 8000 800
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="page-header__main-content">
+                <img class="page-header__logo" src="../images/logo-header.svg" alt="">
+                <h1 class="title">Ski-park</h1>
+                <hr>
+                <span class="section-title">Услуги</span>
+            </div>
+        </header>
+    </div>
+
+    <div class="page-services">
+        <section class="page-section rent-property">
+            <div class="container padding-left">
+                <h2 class="section-title">Аренда жилья</h2>
+                <div class="rent-property__content flex-sb flex-ai-center">
+                    <div class="property-text">
+                        <p class="medium-text">Окунись в зимнюю атмосферу уюта.
+                            Уникальные деревянные домики, изготовленные по авторским проектам ждут своих гостей.</p>
+                        <p class="medium-text">Неповторимая атмосфера и панорамные окна оставят неповторимые воспоминания. 
+                            Сюда хотется возвращаться снова и снова.</p>
+                        <a class="btn btn--secondary page-services__btn" href="">Выбрать дом</a>
+                    </div>
+                    <div class="property-gallery">
+                        <img class="property-gallery__item property-gallery__item--big" src="../images/property1.jpg" alt="">
+                        <img class="property-gallery__item" src="../images/property2.jpg" alt="">
+                        <img class="property-gallery__item" src="../images/property3.jpg" alt="">
+                    </div>            
+                </div>            
+            </div>      
+        </section>
+
+        <section class="page-section rent-equipment">
+            <div class="container padding-left">
+                <h2 class="section-title">Аренда оборудования</h2>
+                <div class="rent-equipment__content flex-sb flex-ai-center">
+                    <img src="../images/equipment.jpg" alt="">
+                    <div class="equipment-text">
+                        <p class="medium-text">Если ты только думаешь, какое оборудование приобрести, лучшим решением будет испытать
+                            разные виды. На нашем курорте профессионалы помогут подобрать любое оборудование и
+                            инвентарь с учетом индивидуальных особенностей. </p>
+                        <p class="medium-text">У нас только качественное оборудование от известных 
+                            мировых брендов, для врослых и детей! </p>
+                        <a class="btn btn--primary page-services__btn" href="">Узнать цены</a>
+                    </div>                        
+                </div>            
+            </div>      
+        </section>
+
+        <section class="page-section ski-tours">
+            <div class="container padding-left">
+                <h2 class="section-title">Горнолыжные туры</h2>
+                <div class="ski-tours__content flex-sb flex-ai-center">
+                    <div class="tours-text">
+                        <p class="medium-text">Испытать себя, насладиться неповторимыми видами,
+                            провести время в компании блтзких по духу людей, зарядиться небывалой
+                            энергией ты можешь, посетив наши горнолыжные туры.</p>
+                        <p class="medium-text">Тщательно спланированный маршрут под руководством опытных
+                            истркуторов. Уникальная природа и горный воздух. Горячие напитки в кафе
+                            по маршруту очаруют своим вкусом и ароматом.</p>
+                        <a class="btn btn--secondary page-services__btn" href="">Посмотреть туры</a>
+                    </div>
+                    <div class="tours-gallery">
+                        <img class="tours-gallery__item" src="../images/ski-tours1.jpg" alt="">
+                        <img class="tours-gallery__item tours-gallery__item--big" src="../images/ski-tours2.jpg" alt="">
+                        <img class="tours-gallery__item" src="../images/ski-tours3.jpg" alt="">
+                        <img class="tours-gallery__item" src="../images/ski-tours4.jpg" alt="">
+                    </div>            
+                </div>            
+            </div>      
+        </section>
+        
+        <section class="page-section services-instructors">
+            <div class="container padding-left">
+                <h2 class="section-title">Услуги инструкторов</h2>
+                <div class="services-instructors__content flex-sb flex-ai-center">
+                    <img src="../images/instructors.jpg" alt="">
+                    <div class="instructors-text">
+                        <p class="medium-text">Забудь про страх и неуверенность, даже если ты новичок.
+                            Просто доверься нашим опытным инструкторам. Они максимально комфортно помогут
+                            любому встать на лыжи или доску. Информируют о безопасности на склоне, а тебе
+                            останется легко и весело провести время.</p>
+                        <a class="btn btn--primary page-services__btn" href="">Узнать больше</a>
+                    </div>                        
+                </div>            
+            </div>      
+        </section>
+    </div>
+    
+    <footer class="page-footer">
+        <div class="container">
+            <nav class="page-footer__nav padding-left">
+                <ul class="page-footer__main flex-sb">
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="">Трассы</a></li>
+                    <li><a href="">События</a></li>
+                    <li class="page-footer__lk">
+                        <a href="">
+                            Личный кабинет
+                            <img src="images/icons/footer-lk.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <hr>
+        <div class="page-footer__bottom padding-left">
+            <div class="container flex-sb">
+                <a href="">Политика конфиденциальности</a>
+                <div class="flex-sb">
+                    <a href="">8 800 8000 800</a>
+                    <div class="page-footer_social">
+                        <ul class="social-list">
+                            <li class="social-list__item">
+                                <a href="">
+                                    <img src="images/icons/footer-vk.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="">
+                                    <img src="images/icons/footer-youtube.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a href="">
+                                    <img src="images/icons/footer-telegram.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

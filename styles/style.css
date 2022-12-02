@@ -1,10 +1,4 @@
 /* общие свойства*/
-:root {
-    --color-dark: #353535;
-    --color-white: #fff;
-    --color-grey: #A8A2A2;
-    --color-green: #2B4E50;
-}
 
 * {
     box-sizing: border-box;
@@ -14,6 +8,14 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--color-dark);
     color: var(--color-white);    
+}
+
+/*main colors*/
+:root {
+    --color-dark: #353535;
+    --color-white: #fff;
+    --color-grey: #A8A2A2;
+    --color-green: #2B4E50;
 }
 
 /* layout */
@@ -84,7 +86,7 @@ body {
     justify-content: space-between;
 }
 
-.flex-center {
+.flex-ai-center {
     display: flex;
     align-items: center;
 }
@@ -104,9 +106,9 @@ a {
 
 /* button */
 .btn {
-    border: 1px solid var(--color-grey);
-    box-sizing: border-box;
+    border: 1px solid var(--color-grey);   
     display: inline-flex;
+    justify-content: center;
     align-items: center;
     color: var(--color-white);
     height: 45px;
@@ -127,7 +129,11 @@ a {
     border: 1px solid var(--color-white);
 }
 
-/* sidebar__items */
+.btn--secondary:hover {
+    border: 1px solid var(--color-white);
+}
+
+/* sidebar */
 .test {
     position: relative;
     overflow-x: hidden;
@@ -159,9 +165,38 @@ a {
     margin-bottom: 5px;
 }
 
-/* header */
+/* page-header */
 .page-header {
     height: 616px;
+    color: var(--color-dark);
+}
+
+.main-menu {
+    padding: 10px;
+}
+
+.main-menu__item a {
+    text-decoration: none;
+    color: var(--color-dark);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.main-menu__item a img {
+    margin-right: 10px;
+}
+
+.page-header__main-content {
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.page-header__main-content hr {
+    width: 230px;
     color: var(--color-dark);
 }
 
@@ -209,35 +244,6 @@ a {
 /* header */
 .page-header--index-banner {
     background-image: url(../images/banner-index.png);
-}
-
-.main-menu {
-    padding: 10px;
-}
-
-.main-menu__item a {
-    text-decoration: none;
-    color: var(--color-dark);
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-}
-
-.main-menu__item a img {
-    margin-right: 10px;
-}
-
-.page-header__main-content {
-    padding-top: 130px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-}
-
-.page-header__main-content hr {
-    width: 230px;
-    color: var(--color-dark);
 }
 
 /* services */
@@ -290,7 +296,6 @@ a {
 .events__btn {
     margin-top: 50px;
     width: 150px;
-    padding-left: 32px;
 }
 
 .events__content {
@@ -306,7 +311,6 @@ a {
 .ski-pass__btn {
     width: 275px;
     margin-top: 20px;
-    padding-left: 32px;
 }
 
 /* feedback */
@@ -324,6 +328,7 @@ a {
 .feedback-form__item {
     width: 475px;
     height: 45px;
+    color: var(--color-white);
     background-color: #4B4949;
     margin-bottom: 20px;
     border: 1px solid var(--color-grey);  
@@ -376,12 +381,26 @@ a {
 
 .contacts {
     background-color: var(--color-green);
+    padding-top: 50px;
+    padding-bottom: 120px;
 }
 
 .contacts__content {
     width: 548px;
     height: 450px;
     border: 1px solid var(--color-white);
+}
+
+.contacts__social {
+    color: #BFBABA;
+}
+
+.contacts__emal {
+    color: var(--color-white);
+}
+
+.contacts__social img {
+    margin-right: 10px;
 }
 
 /*rules*/
@@ -402,4 +421,75 @@ a {
 
 .rules__item p {
     width: 387px;
+}
+
+/* свойства для services.html */
+
+.page-header--services-banner {
+    background-image: url(../images/banner-services.png);
+}
+
+.page-services h2 {
+    margin-bottom: 100px;
+}
+
+.page-services__btn {
+    width: 220px;
+    margin-top: 40px;
+}
+
+/* rent-property */
+.rent-property {
+    background-color: var(--color-green);
+    padding-top: 50px;
+}
+
+.property-text {
+    width: 460px;
+    height: 416px;
+} 
+
+.property-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 145px;
+}
+
+.property-gallery__item--big {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+/* rent-equipment */
+.equipment-text {
+    width: 476px;
+}
+
+/* ski-tours */
+.ski-tours {
+    background-color: var(--color-green);
+    padding-top: 50px;
+}
+
+.tours-text {
+    width: 524px;
+}
+
+.tours-gallery {
+    display: grid;
+    grid-template-columns: 276px 228px;   
+    row-gap: 30px;
+    column-gap: 24px;
+    margin-bottom: 100px;
+}
+
+.tours-gallery__item--big {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+/* services-instructors */
+.instructors-text {
+    width: 424px;
 }
