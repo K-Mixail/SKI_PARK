@@ -544,3 +544,65 @@ a {
 .equipment-price__text p {
     color: #D6D6D6;
 }
+
+/* *** свойства для rent-equipment.html *** */
+.page-header--instructors-banner {
+    background-image: url(../images/banner-instructors.png);
+}
+
+.instructors-benefits h2 {
+    margin-bottom: 50px;
+}
+
+.instructors-benefits__content p {
+    width: 450px;
+}
+
+.instructors-benefits__gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.instructors-benefits__item--big {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.instructors-price {
+    background-color: var(--color-green);
+}
+
+.instructors-price h2 {
+    padding-top: 50px;
+}
+
+.instructors-price__item {
+    position: relative;
+    width: 350px;
+    height: 620px;
+    margin-top: 40px;
+    margin-bottom: 90px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid var(--color-grey);
+    background-color: var(--color-dark);
+}
+
+.instructors-price__btn {
+    position: absolute;
+    left: 80px;
+    bottom: 20px;
+    width: 150px;
+}
+
+.instructors__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 35px;
+    row-gap: 50px;
+}
+
+.instructors__item {
+    width: 337px;
+}
