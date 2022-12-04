@@ -41,6 +41,11 @@ body {
     font-weight: 700;
     font-size: 60px;
     line-height: 73px;
+    height: 78;
+    width: 234px;
+    border-bottom: #353535 3px solid;
+    text-align: center;
+    margin-bottom: 3px;
 }
 
 .section-title {
@@ -157,6 +162,7 @@ a {
     width: 120px;
     height: 100vh;
     border-right: 1px solid var(--color-white);
+    background-color: #353535;
 }
 
 .sidebar__item a {
@@ -228,6 +234,7 @@ a {
 
 .social-list {
     gap: 10px;
+    align-items: center;
 }
 
 
@@ -255,6 +262,8 @@ a {
     padding-left: 35px;
     border: 1px solid var(--color-grey);
 }
+
+
 
 .service__item p {
     width: 385px;
@@ -343,6 +352,12 @@ a {
     border: 1px solid var(--color-grey);
     color: var(--color-white);
     background-color: #4B4949;
+}
+.feedback-form__item::placeholder {
+    color: var(--color-grey);
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 14px;
 }
 
 .feedback-form__item:hover {
