@@ -34,7 +34,8 @@ body {
 
 /* font-size for title */
 .title {
-    margin: 0;
+    margin-top: -15px;
+    margin-bottom: -5px;
     font-family: 'Cormorant Garamond';
     font-style: normal;
     font-weight: 700;
@@ -230,7 +231,7 @@ a {
 }
 
 
-/*свойства для index.html */
+/* *** свойства для index.html *** */
 
 /* header */
 .page-header--index-banner {
@@ -374,10 +375,11 @@ a {
 
 ::placeholder {
     color: var(--color-white);
+    font-size: 14px;
   }
 
 
-/* свойства для about.html */
+/* *** свойства для about.html *** */
 
 .page-header--about-banner {
     background-image: url(../images/banner-about.png);
@@ -428,7 +430,7 @@ a {
     width: 387px;
 }
 
-/* свойства для services.html */
+/* *** свойства для services.html *** */
 
 .page-header--services-banner {
     background-image: url(../images/banner-services.png);
