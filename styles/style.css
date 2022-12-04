@@ -606,3 +606,29 @@ a {
 .instructors__item {
     width: 337px;
 }
+
+/* *** свойства для slopes.html *** */
+.page-header--slopes-banner {
+    background-image: url(../images/banner-slopes.png);
+}
+
+.slopes {
+    background-color: var(--color-green);
+    padding-bottom: 150px;
+    padding-top: 50px;
+}
+
+.slopes__name {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 60px;
+    width: 550px;
+    height: 520px;
+    padding: 30px;
+    border: 2px solid var(--color-grey);
+}
+
+.slopes__item p {
+    color: #D6D6D6;
+}
