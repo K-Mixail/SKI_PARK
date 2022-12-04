@@ -634,6 +634,11 @@ a {
     padding-top: 50px;
 }
 
+.slopes__info {
+    width: 500px;
+    margin-bottom: 50px;
+}
+
 .slopes__name {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -647,4 +652,23 @@ a {
 
 .slopes__item p {
     color: #D6D6D6;
+}
+
+.elevators__block {
+    width: 540px;
+    height: 950px;
+}
+
+.elevators__item {
+    height: 780px;
+    padding: 60px;
+    border: 2px solid var(--color-grey);
+}
+
+.elevators__item p {
+    color: #D6D6D6;
+}
+
+.elevators__btn {
+    width: 260px;
 }
