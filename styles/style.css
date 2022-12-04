@@ -7,13 +7,14 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--color-dark);
-    color: var(--color-white);    
+    color: var(--color-white); 
+    margin: 0;   
 }
 
 /*main colors*/
 :root {
     --color-dark: #353535;
-    --color-white: #fff;
+    --color-white: #EFEFEF;
     --color-grey: #A8A2A2;
     --color-green: #2B4E50;
     
