@@ -779,3 +779,14 @@ a {
     grid-column: span 1;
     grid-row: span 2;
 }
+
+/* *** свойства для rent-house.html *** */
+.page-header--rent-house-banner {
+    background-image: url(../images/banner-rent-house.png);
+}
+
+
+/* *** свойства для rent-house.html *** */
+.page-header--tours-banner {
+    background-image: url(../images/banner-tours.png);
+}
