@@ -205,15 +205,26 @@
         <div class="container flex">
             <div class="feedback__content">
                 <form class="feedback-form" action="">
-                    <h3 class="feedback-form__title big-text">Остались вопросы? <br>Будем рады позвонить Вам</h3>
-                    <input class="feedback-form__item big-text" type="text" placeholder="Имя, Фамилия">            
-                    <input class="feedback-form__item feedback-form__item--mod-size big-text" type="email" placeholder="Электронная почта">
-                    <input class="feedback-form__item feedback-form__item--mod-size big-text" type="tel" placeholder="Телефон">
-                    <textarea class="feedback-form__item feedback-form__item--textarea medium-text" name="" placeholder="Введите сообщение"></textarea>
+                    <h3 class="feedback-form__title ">Остались вопросы? <br>Будем рады позвонить Вам</h3>
+                    <div class="feedback-form__input">
+                        <input class="feedback-form__item " type="text" placeholder="Имя, Фамилия">     
+                    </div> 
+                    <div class="feedback-form__opposite flex-sb">
+                        <div class="feedback-form__input">     
+                            <input class="feedback-form__item feedback-form__item--mod-size" type="email" placeholder="Электронная почта">
+                        </div> 
+                        <div class="feedback-form__input">
+                            <input class="feedback-form__item feedback-form__item--mod-size" type="tel" placeholder="Телефон">
+                        </div>
+                    </div>
+                    <div class="feedback-form__input">
+                    
+                        <textarea class="feedback-form__item feedback-form__item--textarea medium-text" name="" placeholder="Введите сообщение"></textarea>
+                    </div>
                     <div class="feedback-form__row-submit flex-sb flex-ai-center">
                         <button class="btn btn--secondary feedback-form__btn">Заказать звонок</button>
                         <label class="feedback-form__terms flex checkbox">
-                            <input class="checkbox__input" type="checkbox">
+                            <input class="checkbox__input" type="checkbox" checked>
                             <p class="checkbox__text small-text">Согласие на обработку <br>персональных данных</p>           
                         </label>                           
                     </div>
@@ -232,8 +243,8 @@
                     <li><a href="pages/about.html">О нас</a></li>
                     <li><a href="pages/slopes.html">Трассы</a></li>
                     <li><a href="">События</a></li>
-                    <li class="page-footer__lk flex-ai-center">
-                        <a href="">
+                    <li class="page-footer__lk ">
+                        <a class="flex-ai-center" href="">
                             Личный кабинет
                             <img src="images/icons/footer-lk.svg" alt="">
                         </a>
