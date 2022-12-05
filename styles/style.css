@@ -790,3 +790,13 @@ a {
 .page-header--tours-banner {
     background-image: url(../images/banner-tours.png);
 }
+
+.tours-active {
+    background-color: var(--color-green);
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.tours-active__content p {
+    width: 495px;
+}
