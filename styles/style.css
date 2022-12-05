@@ -562,7 +562,7 @@ a {
     color: #D6D6D6;
 }
 
-/* *** свойства для rent-equipment.html *** */
+/* *** свойства для instructors.html *** */
 .page-header--instructors-banner {
     background-image: url(../images/banner-instructors.png);
 }
@@ -672,4 +672,69 @@ a {
 
 .elevators__btn {
     width: 260px;
+}
+
+
+/* *** свойства для events.html *** */
+.page-header--events-banner {
+    background-image: url(../images/banner-events.png);
+}
+
+.page-events__date {
+    color: #BFBABA;
+    font-size: 24px;
+}
+
+/* event-start */
+.event-start {
+    background-color: var(--color-green);
+    padding-top: 130px;
+    padding-bottom: 140px;
+}
+
+.event-start__content {
+    position: relative; 
+}
+
+.event-start__block-content {
+    position: absolute;
+    right: 0;
+    width: 555px;
+    height: 600px;
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-top: 20px;
+    border: 1px solid var(--color-grey);
+    background-color: var(--color-dark);
+}
+
+.event-start__list li {
+    margin-bottom: 15px;
+}
+
+.event-start__btn {
+    width: 222px;
+    position: absolute;
+    top: 525px;
+}
+
+/* event-new-year */
+.event-new-year__text {
+    width: 444px;
+}
+
+.event-new-year__btn {
+    width: 222px;
+    margin-top: 80px;
+}
+
+.event-new-year__gallery {
+    display: grid;
+    grid-template-columns: 332px 255px;
+    gap: 20px;
+}
+
+.event-new-year__item--big {
+    grid-column: span 1;
+    grid-row: span 2;
 }
