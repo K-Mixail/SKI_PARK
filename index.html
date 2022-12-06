@@ -4,20 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ski-park</title>
 
     <!-- подключаем шрифты -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="styles/normalize.css">
+    
+
+
+
 
     <!-- подключаем стили: -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/hamburgers.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media.css">
+
 </head>
 
 <body>
-    <div class="sidebar">
+
+
+
+    
+
+
+
+
+    <nav class="sidebar">
         <ul class="sidebar__column flex-column">
             <li class="sidebar__item">
                 <a class="flex-column-ai-center" href="index.html">
@@ -68,10 +83,38 @@
                 </a>
             </li>
         </ul>
-    </div>
+    </nav>
+    
+
 
     <div class="container">
         <header class="page-section page-header page-header--index-banner">
+
+            <button class="page-header__toggle hamburger hamburger--collapse" type="button" onclick="this.classList.toggle('is-active')">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+            <nav class="page-header__col-menu">
+                <ul class="page-header__col-list">
+                    <li class="page-header__col-item"><a href="index.html">Главная страница</a></li>
+                    <li class="page-header__col-item"><a href="pages/services.html">Услуги</a></li>
+                    <li class="page-header__col-item"><a href="pages/about.html">О нас</a></li>
+                    <li class="page-header__col-item"><a href="pages/">Проживание</a></li>
+                    <li class="page-header__col-item"><a href="">Горнолыжные туры</a></li>
+                    <li class="page-header__col-item"><a href="pages/rent-equipment.html">Аренда снаряжения</a></li>
+                    <li class="page-header__col-item"><a href="pages/intructors.html">Занятия с инструкторами</a></li>
+                    <li class="page-header__col-item"><a href="pages/slopes.html">Трассы</a></li>
+                    <li class="page-header__col-item"><a href="">События</a></li>
+                    <li class="page-header__col-item"><a href="">Личный кабинет</a></li>
+    
+                </ul>
+                <a class="btn btn--primary page-header__btn" href="">Заказать звонок</a>
+            </nav>
+                
+
+
+
             <nav class="page-header__nav">
                 <ul class="main-menu flex-sb">
                     <li class="main-menu__item">
@@ -97,6 +140,10 @@
                     </li>
                 </ul>
             </nav>
+
+
+
+              
             <div class="page-header__main-content">
                 <img class="page-header__logo" src="images/logo-header.svg" alt="">
                 <h1 class="title">Ski-park</h1>
