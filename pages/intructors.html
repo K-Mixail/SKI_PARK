@@ -12,7 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"> 
 
     <!-- подключаем стили: -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/hamburgers.css">
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/media.css">
 </head>
 
 <body>
@@ -70,6 +73,30 @@
 
     <div class="container">
         <header class="page-section page-header page-header--instructors-banner">
+
+            <button class="page-header__toggle hamburger hamburger--collapse" type="button" onclick="this.classList.toggle('is-active')">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+            <nav class="page-header__col-menu">
+                <ul class="page-header__col-list">
+                    <li class="page-header__col-item"><a href="index.html">Главная страница</a></li>
+                    <li class="page-header__col-item"><a href="pages/services.html">Услуги</a></li>
+                    <li class="page-header__col-item"><a href="pages/about.html">О нас</a></li>
+                    <li class="page-header__col-item"><a href="pages/">Проживание</a></li>
+                    <li class="page-header__col-item"><a href="">Горнолыжные туры</a></li>
+                    <li class="page-header__col-item"><a href="pages/rent-equipment.html">Аренда снаряжения</a></li>
+                    <li class="page-header__col-item"><a href="pages/intructors.html">Занятия с инструкторами</a></li>
+                    <li class="page-header__col-item"><a href="pages/slopes.html">Трассы</a></li>
+                    <li class="page-header__col-item"><a href="">События</a></li>
+                    <li class="page-header__col-item"><a href="">Личный кабинет</a></li>
+    
+                </ul>
+                <a class="btn btn--primary page-header__btn" href="">Заказать звонок</a>
+            </nav>
+
+            
             <nav class="page-header__nav">
                 <ul class="main-menu flex-sb">
                     <li class="main-menu__item">
