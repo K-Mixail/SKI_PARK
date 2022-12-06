@@ -1,0 +1,47 @@
+
+@media screen and (max-width: 1200px) {
+  /* hamburger*/
+      .sidebar,
+      .page-header__nav {
+        display: none; 
+        position: absolute;
+
+        background-color: var(--color-dark);
+      }
+      .sidebar__column {
+        display: block;
+        padding: 20px;
+      }
+      .column-menu {
+        display: block;
+      }
+      .page-header__toggle {
+        display: block;
+      } 
+      .page-header__col-menu {
+        display: none; 
+        position: absolute;
+        width: 310px;
+        height: 452px;
+        background-color: var(--color-dark);
+        padding: 35px;
+        }
+        .page-header__col-list {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+        .page-header__btn {
+          width: 250px;
+          margin-top: 30px;
+        }
+        .page-header__col-list a:hover {
+          color: var(--color-light);
+
+        }
+        .page-header__toggle.is-active + .page-header__col-menu{
+          display: block;
+        }
+        /*main banner*/
+
+}

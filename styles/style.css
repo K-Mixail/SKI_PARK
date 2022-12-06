@@ -17,6 +17,7 @@ body {
     --color-white: #EFEFEF;
     --color-grey: #A8A2A2;
     --color-green: #2B4E50;
+    --color-light: #61B4B9;
     
 }
 
@@ -24,6 +25,7 @@ body {
 .container {
     width: 1140px;
     margin: 0 auto;    
+    padding: 0 15px;
 }
 
 .padding-left {
@@ -714,7 +716,27 @@ a {
 .elevators__btn {
     width: 260px;
 }
+/* hamburger*/
 
+.page-header__toggle {
+    display: none;
+  } 
+  .page-header__col-menu {
+    display: none;
+  }
+  
+  .hamburger-inner, 
+  .hamburger-inner::before, 
+  .hamburger-inner::after,
+  .hamburger.is-active .hamburger-inner, 
+  .hamburger.is-active .hamburger-inner::before, 
+  .hamburger.is-active .hamburger-inner::after {
+    background-color: var(--color-dark);
+    border-radius: 1.5px;
+  }
+  .page-header__toggle.is-active + .page-header__col-menu{
+    display: none;
+  }
 
 /* *** свойства для events.html *** */
 .page-header--events-banner {
