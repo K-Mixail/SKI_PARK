@@ -254,20 +254,15 @@
     width: 296px;
     height: 504px;
   }
-  .feedback-form__btn {
 
-  }
   .feedback-form__btn {
     width: 264px;
   }
   .checkbox__text  {
     margin-left: 0;
     width: 271px;
+  }
 
-  }
-  .feedback-form__terms {
-    width: 271px;
-  }
   .feedback-form__row-submit {
     align-items: flex-start;
     width: 271px;
