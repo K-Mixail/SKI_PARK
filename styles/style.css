@@ -243,6 +243,16 @@ a {
     align-items: center;
 }
 
+.page-footer__mobile {
+    display: none;
+}
+.page-footer__bottom-mobile {
+    display: none;
+}
+.page-footer-line {
+    border-top: var(--color-white) 1px solid;
+}
+
 
 /* *** свойства для index.html *** */
 
@@ -390,6 +400,8 @@ a {
   
 .checkbox__text {
     margin-left: 10px;
+    font-size: 12px;
+    width: 190px;
 }
 .checkbox__input {
     position: absolute;
