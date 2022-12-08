@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,21 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"> 
     
-
-
-
-
     <!-- подключаем стили: -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/hamburgers.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/media.css">
-
 </head>
 
 <body>
-
-
     <nav class="sidebar">
         <ul class="sidebar__column flex-column">
             <li class="sidebar__item">
@@ -68,7 +61,6 @@
                     <img class="sidebar__img" src="images/icons/sidebar-trass.svg" alt=""> 
                     Трассы
                 </a>
-            
             </li>
             <li class="sidebar__item">
                 <a class="flex-column-ai-center" href="pages/events.html">
@@ -78,12 +70,9 @@
             </li>
         </ul>
     </nav>
-    
-
 
     <div class="container">
-        <header class="page-section page-header page-header--index-banner">
-
+        <header class="section-margin page-header page-header--index-banner">
             <button class="page-header__toggle hamburger hamburger--collapse" type="button" onclick="this.classList.toggle('is-active')">
                 <span class="hamburger-box">
                   <span class="hamburger-inner"></span>
@@ -94,21 +83,16 @@
                     <li class="page-header__col-item"><a href="index.html">Главная страница</a></li>
                     <li class="page-header__col-item"><a href="pages/services.html">Услуги</a></li>
                     <li class="page-header__col-item"><a href="pages/about.html">О нас</a></li>
-                    <li class="page-header__col-item"><a href="pages/">Проживание</a></li>
-                    <li class="page-header__col-item"><a href="">Горнолыжные туры</a></li>
+                    <li class="page-header__col-item"><a href="pages/rent-house.html">Проживание</a></li>
+                    <li class="page-header__col-item"><a href="pages/tours.html">Горнолыжные туры</a></li>
                     <li class="page-header__col-item"><a href="pages/rent-equipment.html">Аренда снаряжения</a></li>
                     <li class="page-header__col-item"><a href="pages/intructors.html">Занятия с инструкторами</a></li>
                     <li class="page-header__col-item"><a href="pages/slopes.html">Трассы</a></li>
-                    <li class="page-header__col-item"><a href="">События</a></li>
+                    <li class="page-header__col-item"><a href="pages/events.html">События</a></li>
                     <li class="page-header__col-item"><a href="">Личный кабинет</a></li>
-    
                 </ul>
                 <a class="btn btn--primary page-header__btn" href="">Заказать звонок</a>
             </nav>
-                
-
-
-
             <nav class="page-header__nav">
                 <ul class="main-menu flex-sb">
                     <li class="main-menu__item">
@@ -134,25 +118,19 @@
                     </li>
                 </ul>
             </nav>
-
-
-
-              
             <div class="page-header__main-content">
                 <img class="page-header__logo" src="images/logo-header.svg" alt="">
                 <h1 class="title">Ski-park</h1>
-
                 <h2 class="page-header__subtitle section-title">Горнолыжный курорт</h2>
-
             </div>
         </header>
     </div>
 
-    <section class="page-section services">
+    <section class="section-margin services">
         <div class="container">
             <h2 class="section-title">Услуги</h2>
             <div class="services__content">
-                <div class="flex-sb services__container">
+                <div class="services__container flex-sb">
                     <img class="services__banner" src="images/rent-apartments.jpg" alt="" id="img"> 
                     <div class="services__column flex-column">                   
                         <label class="service__item">
@@ -201,7 +179,7 @@
         </div>      
     </section>
 
-    <section class="page-section events">
+    <section class="events section-margin">
         <div class="container">
             <h2 class="section-title">Ближайшие события в Ski-park</h2>
             <div class="events__content flex">
@@ -227,9 +205,9 @@
         </div>
     </section>
     
-    <section class="page-section ski-pass">
+    <section class="ski-pass section-margin">
         <div class="container">
-            <div class="flex-sb padding-left ski-pass__block">
+            <div class="ski-pass__block flex-sb padding-left">
                 <div class="ski-pass__content">
                     <h2 class="section-title">Ski-pass</h2>
                     <p>Ski-pass – электронный пропуск на подъемники.
@@ -242,8 +220,7 @@
         </div>
     </section>
 
-    <section class="page-section feedback container flex">
-
+    <section class="feedback section-margin container flex">
         <div class="feedback__content">
             <form class="feedback-form" action="">
                 <h3 class="feedback-form__title ">Остались вопросы? <br>Будем рады позвонить Вам</h3>
@@ -258,8 +235,7 @@
                         <input class="feedback-form__item feedback-form__item--mod-size" type="tel" placeholder="Телефон">
                     </div>
                 </div>
-                <div class="feedback-form__input">
-                
+                <div class="feedback-form__input">                
                     <textarea class="feedback-form__item feedback-form__item--textarea medium-text" name="" placeholder="Введите сообщение"></textarea>
                 </div>
                 <div class="feedback-form__row-submit flex-sb flex-ai-center">
@@ -272,7 +248,6 @@
             </form>
         </div>
         <img src="images/banner-feedback.jpg" alt="">
-
     </section>
 
     <footer class="page-footer">
@@ -293,10 +268,8 @@
                 </ul>
             </nav>
             <div class="page-footer__mobile flex-sb ">
-
                     <a href="">8 800 8000 800</a>
                     <a href=""><img src="images/icons/footer-lk.svg" alt=""></a>
-
             </div>
         </div>
         <div class="page-footer-line">
@@ -342,11 +315,8 @@
                         <img src="images/icons/footer-telegram.svg" alt="">
                     </a>
                 </div>
-
             </div>
         </div>
-
-           
     </footer>
     <script src="scripts/app.js"></script>
 </body>

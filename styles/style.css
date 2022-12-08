@@ -17,22 +17,25 @@ body {
     --color-white: #EFEFEF;
     --color-grey: #A8A2A2;
     --color-green: #2B4E50;
-    --color-light: #61B4B9;
-    
+    --color-light: #61B4B9;    
 }
 
 /* layout */
 .container {
     width: 1140px;
-    margin: 0 auto;    
-
+    margin: 0 auto;   
 }
 
 .padding-left {
     padding-left: 30px;
 }
 
-.page-section {
+.section-padding {
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+
+.section-margin {
     margin-bottom: 130px;
 }
 
@@ -166,7 +169,7 @@ a {
     max-width: 102px;
     height: 100vh;
     border-right: 1px solid var(--color-white);
-    background-color: #353535;
+    background-color: var(--color-dark);
 }
 
 .sidebar__item a {
@@ -176,6 +179,29 @@ a {
 
 .sidebar__img {
     margin-bottom: 5px;
+}
+
+/* hamburger*/
+.page-header__toggle {
+    display: none;
+} 
+
+.page-header__col-menu {
+    display: none;
+}
+  
+.hamburger-inner, 
+.hamburger-inner::before, 
+.hamburger-inner::after,
+.hamburger.is-active .hamburger-inner, 
+.hamburger.is-active .hamburger-inner::before, 
+.hamburger.is-active .hamburger-inner::after {
+    background-color: var(--color-dark);
+    border-radius: 1.5px;
+}
+
+.page-header__toggle.is-active + .page-header__col-menu{
+    display: none;
 }
 
 /* page-header */
@@ -205,11 +231,6 @@ a {
     padding-top: 130px;
 }
 
-.page-header__main-content hr {
-    width: 230px;
-    color: var(--color-dark);
-}
-
 /* page-footer */
 .page-footer {
     background-color: var(--color-green);
@@ -224,8 +245,7 @@ a {
     margin-left: 6px;
 }
 
-
-.page-footer hr {
+.page-footer hr {                   /*................УБРАТЬ ПОТОМ....................*/
     color: var(--color-white);
 }
 
@@ -256,7 +276,6 @@ a {
 
 /* *** свойства для index.html *** */
 
-/* header */
 .page-header--index-banner {
     background-image: url(../images/banner-index.png);
 }
@@ -279,8 +298,6 @@ a {
     border: 1px solid var(--color-grey);
 }
 
-
-
 .service__item p {
     width: 385px;
 }
@@ -289,8 +306,9 @@ a {
     position: absolute;
     top: 140px;
     gap: 10px;
-}.events
+}
 
+.events                             /*?????????????????????????????????????????????????????*/
 .check:checked+::before {  
     content: '';    
     z-index: -1;  
@@ -311,7 +329,6 @@ a {
 .events {
     background-color: var(--color-green);
     padding-top: 130px;
-
 }
 
 .events__info {
@@ -378,20 +395,19 @@ a {
     border: 2px solid var(--color-white);
     outline: none;
   }
-  .feedback-form__input {
+.feedback-form__input {
     margin-bottom: 15px;
-  }
-
+}
 
   
 .feedback-form__item--textarea {
     resize: none;
     height: 75px;
-  }
+}
 
-  .feedback-form__opposite {
+.feedback-form__opposite {
     gap: 15px;
-  }
+}
 
 .feedback-form__row-submit {
     width: 473px;
@@ -414,18 +430,18 @@ a {
     border: 0;
     opacity: 0;
 }
-.checkbox__input:checked + .checkbox__text::before{
+.checkbox__input:checked + .checkbox__text::before {
     background: var(--color-green) url('../images/icons/check.svg') no-repeat center center;
-  }
+}
   
-.checkbox__input:focus-visible + .checkbox__text::before{
+.checkbox__input:focus-visible + .checkbox__text::before {
     outline: 1px solid var(--color-white);
 }
 
 .checkbox__text {
     padding-left: 40px;
-  display: block;
-  position: relative;
+    display: block;
+    position: relative;
 }
 
 .checkbox__text::before {
@@ -438,7 +454,7 @@ a {
     top: 50%;
     margin-top: -10px;
     cursor: pointer;
-  }
+}
     
 .feedback-form__btn {
     width: 227px;
@@ -448,8 +464,7 @@ a {
 ::placeholder {
     color: var(--color-white);
     font-size: 14px;
-  }
-
+}
 
 /* *** свойства для about.html *** */
 
@@ -463,8 +478,6 @@ a {
 }
 
 .contacts {
-    padding-top: 50px;
-    padding-bottom: 120px;
     background-color: var(--color-green);
 }
 
@@ -519,7 +532,6 @@ a {
 
 /* rent-property */
 .rent-property {
-    padding-top: 50px;
     background-color: var(--color-green);
 }
 
@@ -532,7 +544,6 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
-    margin-bottom: 145px;
 }
 
 .property-gallery__item--big {
@@ -547,7 +558,6 @@ a {
 
 /* ski-tours */
 .ski-tours {
-    padding-top: 50px;
     background-color: var(--color-green);
 }
 
@@ -560,7 +570,6 @@ a {
     grid-template-columns: 276px 228px;   
     row-gap: 30px;
     column-gap: 24px;
-    margin-bottom: 100px;
 }
 
 .tours-gallery__item--big {
@@ -574,17 +583,16 @@ a {
 }
 
 /* *** свойства для rent-equipment.html *** */
+
 .page-header--rent-equipment-banner {
     background-image: url(../images/banner-rent-equipment.png);
 }
 
 .equipment-benefits {
     background-color: var(--color-green);
-    padding-bottom: 120px;
 }
 
 .equipment-benefits h2 {
-    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -618,6 +626,7 @@ a {
 }
 
 /* *** свойства для instructors.html *** */
+
 .page-header--instructors-banner {
     background-image: url(../images/banner-instructors.png);
 }
@@ -645,18 +654,12 @@ a {
     background-color: var(--color-green);
 }
 
-.instructors-price h2 {
-    padding-top: 50px;
-}
-
 .instructors-price__item {
     position: relative;
     width: 350px;
     height: 620px;
     margin-top: 40px;
-    margin-bottom: 90px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
     border: 1px solid var(--color-grey);
     background-color: var(--color-dark);
 }
@@ -680,14 +683,13 @@ a {
 }
 
 /* *** свойства для slopes.html *** */
+
 .page-header--slopes-banner {
     background-image: url(../images/banner-slopes.png);
 }
 
 .slopes {
     background-color: var(--color-green);
-    padding-bottom: 150px;
-    padding-top: 50px;
 }
 
 .slopes__info {
@@ -728,27 +730,6 @@ a {
 .elevators__btn {
     width: 260px;
 }
-/* hamburger*/
-
-.page-header__toggle {
-    display: none;
-  } 
-  .page-header__col-menu {
-    display: none;
-  }
-  
-  .hamburger-inner, 
-  .hamburger-inner::before, 
-  .hamburger-inner::after,
-  .hamburger.is-active .hamburger-inner, 
-  .hamburger.is-active .hamburger-inner::before, 
-  .hamburger.is-active .hamburger-inner::after {
-    background-color: var(--color-dark);
-    border-radius: 1.5px;
-  }
-  .page-header__toggle.is-active + .page-header__col-menu{
-    display: none;
-  }
 
 /* *** свойства для events.html *** */
 .page-header--events-banner {
@@ -763,8 +744,6 @@ a {
 /* event-start */
 .event-start {
     background-color: var(--color-green);
-    padding-top: 130px;
-    padding-bottom: 140px;
 }
 
 .event-start__content {
@@ -776,9 +755,7 @@ a {
     right: 0;
     width: 555px;
     height: 600px;
-    padding-left: 25px;
-    padding-right: 20px;
-    padding-top: 20px;
+    padding: 20px 20px 0 25px;
     border: 1px solid var(--color-grey);
     background-color: var(--color-dark);
 }
@@ -815,20 +792,27 @@ a {
 }
 
 /* *** свойства для rent-house.html *** */
+
 .page-header--rent-house-banner {
     background-image: url(../images/banner-rent-house.png);
 }
 
+.rent-house-benefits {
+    background-color: var(--color-green);
+}
 
-/* *** свойства для rent-house.html *** */
+.rent-house-benefits__info {
+    width: 500px;
+}
+
+
+/* *** свойства для tours.html *** */
 .page-header--tours-banner {
     background-image: url(../images/banner-tours.png);
 }
 
 .tours-active {
     background-color: var(--color-green);
-    padding-top: 100px;
-    padding-bottom: 150px;
 }
 
 .tours-active__content p {
