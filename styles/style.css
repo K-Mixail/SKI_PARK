@@ -279,7 +279,7 @@ a {
     position: absolute;
     top: 140px;
     gap: 10px;
-}
+}.events
 
 .check:checked+::before {  
     content: '';    
@@ -301,7 +301,7 @@ a {
 .events {
     background-color: var(--color-green);
     padding-top: 130px;
-    padding-left: 70px;
+
 }
 
 .events__info {
@@ -326,6 +326,7 @@ a {
 
 .events__content {
     column-gap: 25px;
+    justify-content: center;
 }
 
 /* ski-pass */

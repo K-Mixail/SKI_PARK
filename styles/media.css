@@ -1,5 +1,6 @@
 
 @media screen and (max-width: 1363px) {
+
   .container {
     padding-left: 70px;
   }
@@ -7,6 +8,7 @@
 }
 
 @media screen and (max-width: 1200px) {
+  /* На устройства 1024px*/
   /* hamburger*/
   .container {
     padding: 0 15px ;
@@ -100,4 +102,37 @@
         }
 
 
+}
+@media screen and (max-width: 1010px) {
+    /* На устройства 768px*/
+  .services__banner {
+      display: none;
+    }
+    .services__container {
+      justify-content: center;
+    }
+    .service__item {
+      width: 517px;
+      height: 174px;
+    }
+    .events__item--hidden {
+      display: none;
+    }
+    .ski-pass__img {
+      width: 306px;
+      height: 256px;
+    } 
+    .feedback img {
+      display: none;
+    }
+    .feedback__content {
+      width: 559px;
+    }
+    .feedback-form__row-submit {
+      width: 473px;
+      height: 60px;
+    }
+    .feedback-form__btn {
+      width: 236px;
+    }
 }
