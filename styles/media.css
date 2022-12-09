@@ -233,12 +233,13 @@
     margin-top: 10px;
   }
   .events__item img {
-  width: 350px;
-  height: 300px;
+  width: 300px;
+  height: 250px;
   }
   .events__info {
-    width: 267px;
+    width: 250px;
     height: 231px;
+    left: 28px;
   }
   .events__btn {
     margin-top: 10px;
@@ -271,6 +272,17 @@
   }
   .feedback-form__terms {
     width: 271px;
+  }
+  .events {
+    height: 800px;
+  }
+  .page-header__subtitle {
+    text-align: center;
+
+  }
+  .ski-pass__img {
+    width: 286px;
+    height: 236px;
   }
 
 }
