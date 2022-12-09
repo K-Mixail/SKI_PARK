@@ -329,15 +329,16 @@ a {
 .events {
     background-color: var(--color-green);
     padding-top: 130px;
+    height: 940px;
 }
 
 .events__info {
-    position: relative;
+    position: absolute;
     left: 125px;
-    bottom: 160px;
+    bottom: -135px;
     width: 370px;
     height: 262px;
-    padding: 0 25px;
+    padding: 0 25px; 
     background-color: var(--color-dark);
     border: 1px solid var(--color-grey);
 }
@@ -818,3 +819,7 @@ a {
 .tours-active__content p {
     width: 495px;
 }
+.events__item {
+    position: relative;
+}
+
