@@ -269,5 +269,8 @@
   .feedback__content {
     padding: 15px;
   }
+  .feedback-form__terms {
+    width: 271px;
+  }
 
 }
