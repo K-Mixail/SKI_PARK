@@ -60,7 +60,8 @@ body {
     font-weight: 700;
     font-size: 50px;
     line-height: 60px;
-    margin: 0 0 30px;  /*отступ снизу*/
+    margin: 0;
+    padding: 0 0 50px;  /*отступ снизу*/
 }
 
 .section-subtitle {
@@ -522,10 +523,6 @@ a {
     background-image: url(../images/banner-services.png);
 }
 
-.page-services h2 {
-    margin-bottom: 100px;
-}
-
 .page-services__btn {
     width: 220px;
     margin-top: 40px;
@@ -593,10 +590,6 @@ a {
     background-color: var(--color-green);
 }
 
-.equipment-benefits h2 {
-    padding-bottom: 50px;
-}
-
 .equipment-price__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -632,10 +625,6 @@ a {
     background-image: url(../images/banner-instructors.png);
 }
 
-.instructors-benefits h2 {
-    margin-bottom: 50px;
-}
-
 .instructors-benefits__content p {
     width: 450px;
 }
@@ -659,7 +648,6 @@ a {
     position: relative;
     width: 350px;
     height: 620px;
-    margin-top: 40px;
     padding: 0 15px;
     border: 1px solid var(--color-grey);
     background-color: var(--color-dark);
@@ -835,3 +823,59 @@ a {
     position: relative;
 }
 
+/* faq */
+.faq-list {
+   width: 450px;
+}
+
+.faq-list__item:not(:last-child) { /*отступы между блоками*/
+    margin-bottom: 30px;
+}
+
+.faq-block {
+    border: 1px solid var(--color-grey); /* граница до нажатия (по умолчанию) */
+}
+
+.faq-block.is-open { /*граница после нажатия*/
+    border: 2px solid var(--color-white); 
+}
+
+.faq-block.is-open .faq-block__content {  
+    display: block; /*показываем скрытый блок контента по нажатию*/
+}
+  
+.faq-block.is-open .faq-block__toggle-icon {
+    transform: rotate(45deg);  /*поворачиваем + превращая его в х*/
+}
+
+.faq-block__toggle {
+    padding: 20px;
+}
+
+.faq-block__toggle-icon {  /*для иконки +*/
+    width: 32px;  /*задаём размеры блока, внутри которого с помощью bgc вставится и*/
+    height: 32px;                                        /* позиционируется иконка*/
+    background: url('../images/icons/plus.svg') no-repeat center center;
+    cursor: pointer;
+  }
+  
+.faq-block__content {  
+    display: none;   
+    margin: -25px 100px 20px 30px;
+    line-height: 130%;
+}
+
+.tour-snowmobile__btn {
+    width: 260px;
+    margin-top: 50px;
+}
+
+.tour-winter-relax {
+    background-color: var(--color-green);
+}
+
+.tour-winter-relax__gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 20px;
+}
