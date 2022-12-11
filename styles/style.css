@@ -806,6 +806,18 @@ a {
     width: 500px;
 }
 
+.rent-house-price__item {
+    margin-bottom: 100px;
+}
+
+.rent-house-price__info {
+    border: 1px solid var(--color-white);
+    padding: 0px 80px 30px 30px;
+}
+
+.rent-house-price__btn {
+    width: 200px;
+}
 
 /* *** свойства для tours.html *** */
 .page-header--tours-banner {
