@@ -1,4 +1,4 @@
-/*Главная страница*/
+
 
 
 
@@ -13,7 +13,9 @@
 
 @media screen and (max-width: 1200px) {
   /* На устройства 1024px*/
-  /* hamburger*/
+
+  /* Главная */
+
   .container {
     padding: 0 15px ;
     width: 100%;
@@ -104,11 +106,27 @@
           justify-content: center;
 
         }
+
+         /* Услуги */
+         .rent-property__content,
+         .rent-equipment__content,
+         .ski-tours__content,
+         .services-instructors__content {
+          gap: 20px;
+         }
+         .property-text,
+         .equipment-text,
+         .instructors-text {
+          width: 571px;
+         }
+
 }
 
 
 @media screen and (max-width: 1010px) {
     /* На устройства 768px*/
+
+    /* Главная */
   .services__banner {
       display: none;
     }
@@ -139,10 +157,33 @@
     .feedback-form__btn {
       width: 236px;
     }
+
+    /* Услуги */
+
+    .rent-property__content,
+    .ski-tours__content {
+      flex-direction: column-reverse;
+    }
+    .rent-equipment__content,
+    .services-instructors__content {
+      flex-direction: column;
+
+    }
+    .property-text,
+         .equipment-text,
+         .instructors-text,
+         .tours-text {
+          width: 463px;
+         }
+    
 }
 
 @media screen and (max-width: 754px) {
   /* На устройства 480px*/
+
+  /* Главная */
+
+
   .section-title {
     font-size: 40px;
   }
@@ -211,6 +252,43 @@
     width: 90px;
     align-items: center;
   }
+
+  /* Услуги */
+  .property-gallery__item--big {
+    width: 214px;
+    height: 353px;
+  
+  }
+  .property-gallery__item-aside {
+    width: 219px;
+    height: 163px;
+  }
+  .rent-equipment__content img {
+    width: 449px;
+    height: 333px;
+  }
+  .services-instructors__content img {
+    width: 449px;
+    height: 298px;
+  }
+  .tours-gallery__item--big {
+    width: 209px;
+    height: 290px;
+  }
+  .tours-gallery__item--left {
+    width: 224px;
+    height: 129px;
+  }
+  .tours-gallery__item--bott {
+    width: 458px;
+    height: 279px;
+  }
+  .tours-gallery {
+    grid-template-columns: 224px 209px;
+  }
+  .page-services__btn {
+    width: 288px;
+  }
 }
 
 
@@ -218,6 +296,10 @@
 
 @media screen and (max-width: 450px) {
   /* На устройства 324px*/
+
+  /* Главная */
+
+
   .section-title {
     font-size: 34px;
   }
@@ -288,5 +370,48 @@
     width: 286px;
     height: 236px;
   }
+
+  /* Услуги */
+
+  .property-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .property-text,
+  .equipment-text,
+  .instructors-text,
+  .tours-text {
+   width: 285px;
+  }
+
+  .property-gallery__item--big  {
+    width: 219px;
+  }
+  .rent-equipment__content img {
+    width: 287px;
+    height: 214px;
+  }
+  .tours-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .tours-gallery__item--big {
+    width: 285px;
+    height: 370px;
+  }
+  .tours-gallery__item--left {
+    width: 285px;
+    height: 178px;
+  }
+  .tours-gallery__item--bott {
+    width: 285px;
+    height: 178px;
+  }
+  .services-instructors__content img {
+    width: 285px;
+    height: 178px;
+}
 
 }

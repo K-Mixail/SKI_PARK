@@ -13,6 +13,7 @@
 
     <!-- подключаем стили: -->
     <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="shortcut icon" href="../images/icons/imgonline-com-ua-favicon-GGSIwLmCNJui.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/hamburgers.css">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/media.css">
@@ -140,8 +141,8 @@
                     </div>
                     <div class="property-gallery">
                         <img class="property-gallery__item property-gallery__item--big" src="../images/property1.jpg" alt="">
-                        <img class="property-gallery__item" src="../images/property2.jpg" alt="">
-                        <img class="property-gallery__item" src="../images/property3.jpg" alt="">
+                        <img class="property-gallery__item-aside" src="../images/property2.jpg" alt="">
+                        <img class="property-gallery__item-aside" src="../images/property3.jpg" alt="">
                     </div>            
                 </div>            
             </div>      
@@ -178,10 +179,10 @@
                         <a class="btn btn--secondary page-services__btn" href="">Посмотреть туры</a>
                     </div>
                     <div class="tours-gallery">
-                        <img class="tours-gallery__item" src="../images/ski-tours1.jpg" alt="">
+                        <img class="tours-gallery__item tours-gallery__item--left" src="../images/ski-tours1.jpg" alt="">
                         <img class="tours-gallery__item tours-gallery__item--big" src="../images/ski-tours2.jpg" alt="">
-                        <img class="tours-gallery__item" src="../images/ski-tours3.jpg" alt="">
-                        <img class="tours-gallery__item" src="../images/ski-tours4.jpg" alt="">
+                        <img class="tours-gallery__item tours-gallery__item--left" src="../images/ski-tours3.jpg" alt="">
+                        <img class="tours-gallery__item tours-gallery__item--bott" src="../images/ski-tours4.jpg" alt="">
                     </div>            
                 </div>            
             </div>      
@@ -208,24 +209,27 @@
         <div class="container">
             <nav class="page-footer__nav padding-left">
                 <ul class="page-footer__main flex-sb">
-                    <li><a href="../index.html">Главная</a></li>
-                    <li><a href="services.html">Услуги</a></li>
-                    <li><a href="about.html">О нас</a></li>
-                    <li><a href="slopes.html">Трассы</a></li>
-                    <li><a href="events.html">События</a></li>
-                    <li class="page-footer__lk flex-ai-center">
-                        <a href="">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="pages/services.html">Услуги</a></li>
+                    <li><a href="pages/about.html">О нас</a></li>
+                    <li><a href="pages/slopes.html">Трассы</a></li>
+                    <li><a href="pages/events.html">События</a></li>
+                    <li class="page-footer__lk ">
+                        <a class="flex-ai-center" href="">
                             Личный кабинет
                             <img src="images/icons/footer-lk.svg" alt="">
                         </a>
                     </li>
                 </ul>
             </nav>
+            <div class="page-footer__mobile flex-sb ">
+                    <a href="">8 800 8000 800</a>
+                    <a href=""><img src="../images/icons/footer-lk.svg" alt=""></a>
+            </div>
         </div>
-        <hr>
-        <div class="container">
-            <div class="page-footer__bottom">
-                <div class="padding-left flex-sb">
+        <div class="page-footer-line">
+            <div class="container ">
+                <div class="page-footer__bottom padding-left flex-sb">
                     <a href="">Политика конфиденциальности</a>
                     <div class="flex">
                         <a href="">8-800-8000-800</a>
@@ -250,8 +254,24 @@
                         </div>
                     </div>
                 </div>
+            </div> 
+        </div>
+        <div class="container">
+            <div class="page-footer__bottom-mobile flex-sb">
+                <a href="">Политика <br> конфиденциальности</a>
+                <div class="flex-sb page-footer__sotial-media">
+                    <a href="">
+                        <img src="../images/icons/footer-vk.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="../images/icons/footer-youtube.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="../images/icons/footer-telegram.svg" alt="">
+                    </a>
+                </div>
             </div>
-        </div>    
+        </div>
     </footer>
 </body>
 </html>
