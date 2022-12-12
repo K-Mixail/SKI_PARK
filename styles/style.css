@@ -534,8 +534,7 @@ a {
 }
 
 .property-text {
-    width: 460px;
-    height: 416px;
+    width: 510px;
 } 
 
 .property-gallery {
@@ -551,7 +550,7 @@ a {
 
 /* rent-equipment */
 .equipment-text {
-    width: 476px;
+    width: 510px;
 }
 
 /* ski-tours */
@@ -577,13 +576,20 @@ a {
 
 /* services-instructors */
 .instructors-text {
-    width: 424px;
+    width: 510px;
+}
+.services-instructors__content {
+    gap: 30px;
 }
 
 /* *** свойства для rent-equipment.html *** */
 
 .page-header--rent-equipment-banner {
     background-image: url(../images/banner-rent-equipment.png);
+}
+
+.rent-equipment__content {
+    gap: 30px;
 }
 
 .equipment-benefits {
