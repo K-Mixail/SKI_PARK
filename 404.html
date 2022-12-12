@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ski-park</title>
+
+    <!-- подключаем шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"> 
+    
+    <!-- подключаем стили: -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/hamburgers.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media.css">
+</head>
+
+<body>
+    <nav class="sidebar">
+        <ul class="sidebar__column flex-column">
+            <li class="sidebar__item">
+                <a class="flex-column-ai-center" href="index.html">
+                    <img class="sidebar__img" src="images/icons/sidebar-logo.svg" alt="">
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a class="flex-column-ai-center" href="pages/rent-house.html">
+                    <img class="sidebar__img" src="images/icons/sidebar-house.svg" alt=""> 
+                    Проживание
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a class="flex-column-ai-center" href="pages/tours.html">
+                    <img class="sidebar__img" src="images/icons/sidebar-toures.svg" alt=""> 
+                    Туры
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a class="flex-column-ai-center" href="pages/rent-equipment.html">
+                    <img class="sidebar__img" src="images/icons/sidebar-LiWi.svg" alt=""> 
+                    Снаряжение
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a class="flex-column-ai-center" href="pages/about.html">
+                    <img class="sidebar__img" src="images/icons/sidebar-with-our.svg" alt=""> 
+                    О нас
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a class="flex-column-ai-center" href="pages/intructors.html">
+                    <img class="sidebar__img" src="images/icons/sidebar-instructors.svg" alt=""> 
+                    Инструкторы
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a class="flex-column-ai-center" href="pages/slopes.html">
+                    <img class="sidebar__img" src="images/icons/sidebar-trass.svg" alt=""> 
+                    Трассы
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a class="flex-column-ai-center" href="pages/events.html">
+                    <img class="sidebar__img" src="images/icons/sidebar-events.svg" alt=""> 
+                    События
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <header class="section-margin page-header page-header--404">
+            <button class="page-header__toggle hamburger hamburger--collapse" type="button" onclick="this.classList.toggle('is-active')">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+            <nav class="page-header__col-menu">
+                <ul class="page-header__col-list">
+                    <li class="page-header__col-item"><a href="index.html">Главная страница</a></li>
+                    <li class="page-header__col-item"><a href="pages/services.html">Услуги</a></li>
+                    <li class="page-header__col-item"><a href="pages/about.html">О нас</a></li>
+                    <li class="page-header__col-item"><a href="pages/rent-house.html">Проживание</a></li>
+                    <li class="page-header__col-item"><a href="pages/tours.html">Горнолыжные туры</a></li>
+                    <li class="page-header__col-item"><a href="pages/rent-equipment.html">Аренда снаряжения</a></li>
+                    <li class="page-header__col-item"><a href="pages/intructors.html">Занятия с инструкторами</a></li>
+                    <li class="page-header__col-item"><a href="pages/slopes.html">Трассы</a></li>
+                    <li class="page-header__col-item"><a href="pages/events.html">События</a></li>
+                    <li class="page-header__col-item"><a href="">Личный кабинет</a></li>
+                </ul>
+                <a class="btn btn--primary page-header__btn" href="">Заказать звонок</a>
+            </nav>
+            <nav class="page-header__nav">
+                <ul class="main-menu flex-sb">
+                    <li class="main-menu__item">
+                        <a class="flex-ai-center" href="">
+                            <img src="images/icons/header-map.svg" alt="">
+                            гора Эльбрус
+                        </a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="pages/services.html">Услуги</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="">Личный кабинет</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="flex-ai-center" href="">
+                            <img src="images/icons/header-tel.svg" alt="">
+                            8 800 8000 800
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+       
+    <section class="page-404">
+        <div class="container">
+            <div class="flex-sb">
+                <div class="page-404__content">
+                    <h1 class="page-404__title">404</h1>
+                    <p class="page-404__subtitle">Page not found</p>
+                    <p class="big-text">The page you are looking for is not available</p>
+                    <a class="btn btn--primary page-404__btn" href="index.html">Вернуться на главную</a>
+                </div>
+                <img class="page-404__img" src="images/404.jpg" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
