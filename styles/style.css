@@ -71,6 +71,13 @@ body {
     line-height: 27px;
 }
 
+.section-subtitle-big {            /*********************НАДО ЛИ?*********************************/
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+
 /*font-size for text*/
 .small-text {
     font-weight: 400;
@@ -675,7 +682,11 @@ a {
 }
 
 .instructors__item {
-    width: 337px;
+    width: 340px;
+}
+
+.instructors__item p {
+    padding-right: 35px;
 }
 
 /* *** свойства для slopes.html *** */
@@ -749,6 +760,10 @@ a {
 /* event-start */
 .event-start {
     background-color: var(--color-green);
+}
+
+.event-start h2 {
+    padding-bottom: 0;
 }
 
 .event-start__content {
