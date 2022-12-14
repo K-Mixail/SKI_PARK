@@ -120,6 +120,25 @@
           width: 571px;
          }
 
+
+          /* Трассы и подъемники */
+
+
+         .slopes__img {
+          display: none;
+         }
+         .slopes__img-mob {
+          display: block;
+         }
+         .elevators__content {
+          flex-direction: column;
+          align-items: center;
+          gap: 30px;
+         }
+         .slopes__content {
+          justify-content: center;
+         }
+
 }
 
 
@@ -175,6 +194,27 @@
          .tours-text {
           width: 463px;
          }
+
+
+         /* Трассы и подъемники */
+         .slopes__img {
+          display: block;
+         }
+         .slopes__img-mob {
+          display: none;
+         }
+         .slopes__content {
+          flex-direction: column;
+          align-items: center;
+         }
+         .slopes__img {
+          width: 551px;
+          height: 519px;
+
+         }
+
+
+
     
 }
 
@@ -288,6 +328,37 @@
   }
   .page-services__btn {
     width: 288px;
+  }
+
+
+  /* Трассы и подъемники */
+
+
+  .slopes__img {
+    width: 451px;
+    height: 425px;
+  }
+  .slopes__name {
+    width: 450px;
+    height: 521px;
+    column-gap: 20px;
+  }
+  .slopes__item {
+    width: 185px;
+  }
+  .elevators__block {
+    width: 450px;
+    height: 930px;
+  }
+  .elevators__item img {
+    width: 328px;
+    height: 443px;
+  }
+  .elevators__btn {
+    width: 292px;
+  }
+  .slopes__info {
+    max-width: 451px;
   }
 }
 
@@ -412,6 +483,46 @@
   .services-instructors__content img {
     width: 285px;
     height: 178px;
+  }
+
+
+ /* Трассы и подъемники */
+
+
+ .slopes__img {
+  width: 290px;
+  height: 270px;
 }
+.slopes__name {
+  grid-template-columns: repeat(1, 1fr);
+}
+.slopes {
+  height: 1790px;
+}
+.slopes__name {
+  width: 290px;
+  height: 1070px;
+}
+.slopes__info {
+ width: 290px;
+ margin-right: auto;
+ margin-left: auto;
+}
+.elevators__block {
+  width: 289px;
+  height: 800px;
+}
+.elevators__item img {
+  width: 241px;
+  height: 332px;
+}
+.elevators__item {
+  padding: 20px;
+  height: 580px;
+}
+.section-title {
+  text-align: center;
+}
+
 
 }

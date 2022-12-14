@@ -13,6 +13,7 @@
 
     <!-- подключаем стили: -->
     <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/hamburgers.css">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/media.css">
@@ -134,7 +135,8 @@
                     захватывающих дух. Независимо от этого, на любой из них завораживающие виды гарантированы.
                 </p>
                 <div class="slopes__content flex">
-                    <img src="../images/slopes.jpg" alt="">
+                    <img class="slopes__img" src="../images/slopes.jpg" alt="">
+                    <img class="slopes__img-mob" src="../images/Slopes-mob.png" alt="">
                     <div class="slopes__name">
                         <div class="slopes__item">
                             <h3 class="section-subtitle">Учебные трассы</h3>
@@ -172,7 +174,7 @@
         <section class="elevators section-margin">
             <div class="container padding-left">
                 <h2 class="section-title">Подъемники Ski-park</h2>
-                <div class="flex-sb">
+                <div class=" elevators__content flex-sb">
                     <div class="elevators__block flex-column-sb">
                         <p class="medium-text">На всех трассах и на всем протяжении курорта работают современные и 
                             качественные подъемники. Какой выбать - зависит от Ваших предпочтений.
@@ -212,19 +214,22 @@
                     <li><a href="about.html">О нас</a></li>
                     <li><a href="slopes.html">Трассы</a></li>
                     <li><a href="events.html">События</a></li>
-                    <li class="page-footer__lk flex-ai-center">
-                        <a href="">
+                    <li class="page-footer__lk ">
+                        <a class="flex-ai-center" href="">
                             Личный кабинет
                             <img src="images/icons/footer-lk.svg" alt="">
                         </a>
                     </li>
                 </ul>
             </nav>
+            <div class="page-footer__mobile flex-sb ">
+                    <a href="">8 800 8000 800</a>
+                    <a href=""><img src="../images/icons/footer-lk.svg" alt=""></a>
+            </div>
         </div>
-        <hr>
-        <div class="container">
-            <div class="page-footer__bottom">
-                <div class="padding-left flex-sb">
+        <div class="page-footer-line">
+            <div class="container ">
+                <div class="page-footer__bottom padding-left flex-sb">
                     <a href="">Политика конфиденциальности</a>
                     <div class="flex">
                         <a href="">8-800-8000-800</a>
@@ -249,8 +254,24 @@
                         </div>
                     </div>
                 </div>
+            </div> 
+        </div>
+        <div class="container">
+            <div class="page-footer__bottom-mobile flex-sb">
+                <a href="">Политика <br> конфиденциальности</a>
+                <div class="flex-sb page-footer__sotial-media">
+                    <a href="">
+                        <img src="../images/icons/footer-vk.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="../images/icons/footer-youtube.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="../images/icons/footer-telegram.svg" alt="">
+                    </a>
+                </div>
             </div>
-        </div>    
+        </div>
     </footer>
 </body>
 </html>

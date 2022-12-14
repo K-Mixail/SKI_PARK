@@ -726,6 +726,9 @@ a {
     height: 170px;
     color: #D6D6D6;
 }
+.slopes__img-mob {
+    display: none;
+}
 
 /* elevators */
 .elevators__block {
