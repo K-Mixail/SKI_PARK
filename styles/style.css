@@ -11,6 +11,7 @@ body {
     margin: 0;   
 }
 
+
 /*main colors*/
 :root {
     --color-dark: #353535;
@@ -180,11 +181,39 @@ a {
     background-color: var(--color-dark);
 }
 
+.sidebar__item--first {
+    margin: 0;
+}
+
+svg {
+    margin: 20px;
+}
+
+.sidebar__item a:hover {
+    fill: #30E3CA;
+    color: #30E3CA;
+    stroke: #30E3CA;
+    stroke-width: 1.5px;
+    transition: all .3s ease;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+}
+
+
 .sidebar__item a {
     margin: 20px;
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 1px;
+    stroke: #f0f7f6;
+    transition: stroke-width 1s, stroke-dashoffset 4s, stroke-dasharray 1s;
 }
-
 .sidebar__img {
     margin-bottom: 5px;
 }
