@@ -549,6 +549,12 @@ a {
     padding-left: 34px;
     border: 1px solid var(--color-grey);
 }
+.rules__img-mobile {
+    display: none;
+}
+.rules__img-mobile-small {
+    display: none;
+}
 
 .rules__item p {
     width: 387px;
