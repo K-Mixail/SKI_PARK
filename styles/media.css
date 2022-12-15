@@ -107,37 +107,60 @@
 
         }
 
-         /* Услуги */
-         .rent-property__content,
-         .rent-equipment__content,
-         .ski-tours__content,
-         .services-instructors__content {
-          gap: 20px;
-         }
-         .property-text,
-         .equipment-text,
-         .instructors-text {
-          width: 571px;
-         }
+        /* Услуги */
+        .rent-property__content,
+        .rent-equipment__content,
+        .ski-tours__content,
+        .services-instructors__content {
+        gap: 20px;
+        }
+        .property-text,
+        .equipment-text,
+        .instructors-text {
+        width: 571px;
+        }
 
 
-          /* Трассы и подъемники */
+        /* Трассы и подъемники */
 
 
-         .slopes__img {
-          display: none;
-         }
-         .slopes__img-mob {
+        .slopes__img {
+        display: none;
+        }
+        .slopes__img-mob {
+        display: block;
+        }
+        .elevators__content {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        }
+        .slopes__content {
+        justify-content: center;
+        }
+
+
+         /* О нас */
+
+
+        .rules__img-mobile {
           display: block;
-         }
-         .elevators__content {
-          flex-direction: column;
-          align-items: center;
-          gap: 30px;
-         }
-         .slopes__content {
+        }
+        .rules__img {
+          display: none;
+        }
+        .rules__content {
           justify-content: center;
-         }
+          gap: 30px;
+        }
+        .contacts__content {
+          width: 414px;
+          padding: 15px;
+        }
+
+
+
+
 
 }
 
@@ -212,6 +235,55 @@
           height: 519px;
 
          }
+
+
+
+          /* О нас */
+
+        .about__item--top-direction {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .about__item--top-direction p {
+          width: 404px;
+        }
+
+        .about__item--bot-direction {
+          flex-direction: column-reverse;
+          align-items: flex-end;
+        }
+        .about__item--bot-direction p {
+          width: 404px;
+          margin-right: 138px;
+        }
+        .contacts__block {
+          flex-direction: column;
+          align-items: center;
+        }
+        .contacts__map {
+          width: 568px;
+          height: 450px;
+        }
+        .contacts__content {
+          width: 568px;
+          height: 450px;
+        }
+        .rules__img-mobile-small {
+          display: block;
+          width: 517px;
+          height: 462px;
+        }
+        .rules__img-mobile  {
+          display: none;
+        }
+        .rules__content {
+          flex-direction: column-reverse;
+          align-items: center;
+        }
+        .rules__column {
+          gap: 20px;
+        }
+
 
 
 
@@ -361,6 +433,50 @@
     max-width: 451px;
   }
 }
+
+
+
+/* О нас */
+
+
+.about__item--top-direction {
+  flex-direction: column;
+  align-items: center;
+}
+.about__item img {
+  width: 450px;
+  height: 315px;
+}
+.about__item p {
+  width: 450px;
+  margin: auto;
+}
+
+.about__item {
+  margin-bottom: 40px;
+}
+.about__item--bot-direction {
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.contacts__map {
+  width: 452px;
+  height: 300px;
+}
+.contacts__content {
+  width: 452px;
+  height: 450px;
+}
+.rules__img-mobile-small {
+
+  width: 443px;
+  height: 414px;
+}
+.rules__item {
+  width: 443px;
+
+}
+
 
 
 
@@ -520,9 +636,44 @@
   padding: 20px;
   height: 580px;
 }
-.section-title {
-  text-align: center;
-}
 
+
+
+/* О нас */
+
+
+
+  .about__item img {
+    width: 293px;
+    height: 193px;
+  }
+  .about__item p {
+    width: 293px;
+
+  }
+  .contacts__map {
+    width: 293px;
+    height: 214px;
+  }
+  .contacts__content {
+    width: 293px;
+
+  }
+  .rules__img-mobile-small {
+
+    width: 293px;
+    height: 259px;
+  }
+  .rules__item {
+    width: 293px;
+    height: 220px;
+    padding: 15px;
+  }
+  .rules__item p {
+    width: 242px;
+  }
+  .rules__item h3 {
+    margin: 10px 0 10px 0;
+  }
 
 }
