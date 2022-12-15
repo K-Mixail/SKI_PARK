@@ -181,13 +181,13 @@ a {
     background-color: var(--color-dark);
 }
 
-.sidebar__item--first {
-    margin: 0;
+.sidebar__column {
+    flex-direction: column;
+
+
 }
 
-svg {
-    margin: 20px;
-}
+
 
 .sidebar__item a:hover {
     fill: #30E3CA;
@@ -201,8 +201,8 @@ svg {
 
 
 .sidebar__item a {
-    margin: 20px;
     font-size: 14px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
