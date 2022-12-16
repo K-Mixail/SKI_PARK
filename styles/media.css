@@ -1,8 +1,3 @@
-
-
-
-
-
 @media screen and (max-width: 1363px) {
 
   .container {
@@ -10,6 +5,8 @@
   }
 
 }
+
+
 
 @media screen and (max-width: 1200px) {
   /* На устройства 1024px*/
@@ -20,308 +17,406 @@
     padding: 0 15px ;
     width: 100%;
   }
-    .page-header--index-banner {
-      background-repeat: no-repeat;
 
-    }
-      .sidebar,
-      .page-header__nav {
-        display: none; 
-        position: absolute;
+  .page-header--index-banner {
+     background-repeat: no-repeat;
+  }
 
-        background-color: var(--color-dark);
-      }
-      .sidebar__column {
-        display: block;
-        padding: 20px;
-      }
-      .column-menu {
-        display: block;
-      }
-      .page-header__toggle {
-        display: block;
-      } 
-      .page-header__col-menu {
-        display: none; 
-        position: absolute;
-        width: 272px;
-        height: 402px;
-        background-color: var(--color-dark);
-        padding: 35px;
-        }
-        .page-header__col-list {
-          display: flex;
-          flex-direction: column;
-          gap: 12px;
-        }
-        .page-header__col-list a{
-          font-size: 14px;
+  .sidebar,
+  .page-header__nav {
+    display: none; 
+    position: absolute;
 
-        }
-        .page-header__btn {
-          width: 220px;
-          margin-top: 15px;
-        }
-        .page-header__col-list a:hover {
-          color: var(--color-light);
+    background-color: var(--color-dark);
+  }
 
-        }
-        .page-header__toggle.is-active + .page-header__col-menu{
-          display: block;
-        }
-        .services__banner {
-          width: 526px;
-          height: 791px;
-        }
-        .service__item {
-          width: 444px;
-          height: 174px;
-        }
-        .events__item img {
-          width: 450px;
-          height: 414px;
-        }
-        .events__info {
-          left: 70px;
+  .sidebar__column {
+    display: block;
+    padding: 20px;
+  }
 
-        }
-        .feedback__content {
-          width: 470px;
-          height: 467px;
-        }
-        .feedback-form__btn {
-          width: 197px;
-        }
-        .feedback-form__row-submit {
-          width: 400px;
-        }
-        .feedback img {
-          width: 510px;
-          height: 467px;
-        }
-        .check:checked+::before {  
-          width: 440px; 
-        }
-        .feedback {
-          justify-content: center;
+  .column-menu {
+    display: block;
+  }
 
-        }
+  .page-header__toggle {
+    display: block;
+  } 
 
-        /* Услуги */
-        .rent-property__content,
-        .rent-equipment__content,
-        .ski-tours__content,
-        .services-instructors__content {
-        gap: 20px;
-        }
-        .property-text,
-        .equipment-text,
-        .instructors-text {
-        width: 571px;
-        }
+  .page-header__col-menu {
+    display: none; 
+    position: absolute;
+    width: 272px;
+    height: 402px;
+    background-color: var(--color-dark);
+    padding: 35px;
+  }
 
+  .page-header__col-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
 
-        /* Трассы и подъемники */
+  .page-header__col-list a{
+    font-size: 14px;
 
+  }
 
-        .slopes__img {
-        display: none;
-        }
-        .slopes__img-mob {
-        display: block;
-        }
-        .elevators__content {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        }
-        .slopes__content {
-        justify-content: center;
-        }
+  .page-header__btn {
+    width: 220px;
+    margin-top: 15px;
+  }
+  .page-header__col-list a:hover {
+    color: var(--color-light);
+
+  }
+
+  .page-header__toggle.is-active + .page-header__col-menu{
+    display: block;
+  }
+
+  .services__banner {
+    width: 526px;
+    height: 791px;
+  }
+
+  .service__item {
+    width: 444px;
+    height: 174px;
+  }
+
+  .events__item img {
+    width: 450px;
+    height: 414px;
+  }
+
+  .events__info {
+    left: 70px;
+  }
+
+  .feedback__content {
+    width: 470px;
+    height: 467px;
+  }
+
+  .feedback-form__btn {
+    width: 197px;
+  }
+
+  .feedback-form__row-submit {
+    width: 400px;
+  }
+
+  .feedback img {
+    width: 510px;
+    height: 467px;
+  }
+
+  .check:checked+::before {  
+    width: 440px; 
+  }
+
+  .feedback {
+    justify-content: center;
+  }
 
 
-         /* О нас */
+  /* Услуги */
 
 
-        .rules__img-mobile {
-          display: block;
-        }
-        .rules__img {
-          display: none;
-        }
-        .rules__content {
-          justify-content: center;
-          gap: 30px;
-        }
-        .contacts__content {
-          width: 414px;
-          padding: 15px;
-        }
+  .rent-property__content,
+  .rent-equipment__content,
+  .ski-tours__content,
+  .services-instructors__content {
+  gap: 20px;
+  }
+
+  .property-text,
+  .equipment-text,
+  .instructors-text {
+  width: 571px;
+  }
 
 
-        /* Аренда оборудования */
-        .equipment-benefits__content {
-          gap: 30px;
-        }
-        .equipment-price__content {
-          grid-template-columns: repeat(2, 355px);
-          justify-content: center;
-        }
+  /* Трассы и подъемники */
 
 
-      
+  .slopes__img {
+  display: none;
+  }
+
+  .slopes__img-mob {
+  display: block;
+  }
+
+  .elevators__content {
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  }
+
+  .slopes__content {
+  justify-content: center;
+  }
 
 
+    /* О нас */
 
 
+  .rules__img-mobile {
+    display: block;
+  }
+
+  .rules__img {
+    display: none;
+  }
+
+  .rules__content {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .contacts__content {
+    width: 414px;
+    padding: 15px;
+  }
+
+
+  /* Аренда оборудования */
+
+
+  .equipment-benefits__content {
+    gap: 30px;
+  }
+
+  .equipment-price__content {
+    grid-template-columns: repeat(2, 355px);
+    justify-content: center;
+  }
+
+
+  /* События */
+
+
+  .event-start__adapted-img {
+    display: block;
+  }
+
+  .event-start__img {
+    display: none;
+  }
+
+  .event-new-year__content {
+    gap: 20px;
+  }
+
+  .event-new-year__item {
+    width: 255px;
+    height: 135px;
+  }
+
+  .event-new-year__item--huge {
+    width: 480px;
+    height: 280px;
+  }
+
+  .event-new-year__item--big {
+    width: 205px;
+    height: 290px;
+  }
+
+  .event-new-year__gallery {
+    grid-template-columns: 255px 205px;
+  }
 
 
 }
+
+
+
 
 
 @media screen and (max-width: 1010px) {
+
     /* На устройства 768px*/
 
     /* Главная */
+
+
   .services__banner {
-      display: none;
-    }
-    .services__container {
-      justify-content: center;
-    }
-    .service__item {
-      width: 517px;
-      height: 174px;
-    }
-    .events__item--hidden {
-      display: none;
-    }
-    .ski-pass__img {
-      width: 306px;
-      height: 256px;
-    } 
-    .feedback img {
-      display: none;
-    }
-    .feedback__content {
-      width: 559px;
-    }
-    .feedback-form__row-submit {
-      width: 473px;
-      height: 60px;
-    }
-    .feedback-form__btn {
-      width: 236px;
-    }
+    display: none;
+  }
 
-    /* Услуги */
+  .services__container {
+    justify-content: center;
+  }
 
-    .rent-property__content,
-    .ski-tours__content {
-      flex-direction: column-reverse;
-    }
-    .rent-equipment__content,
-    .services-instructors__content {
-      flex-direction: column;
+  .service__item {
+    width: 517px;
+    height: 174px;
+  }
 
-    }
-    .property-text,
-         .equipment-text,
-         .instructors-text,
-         .tours-text {
-          width: 463px;
-         }
+  .events__item--hidden {
+    display: none;
+  }
+
+  .ski-pass__img {
+    width: 306px;
+    height: 256px;
+  } 
+
+  .feedback img {
+    display: none;
+  }
+
+  .feedback__content {
+    width: 559px;
+  }
+
+  .feedback-form__row-submit {
+    width: 473px;
+    height: 60px;
+  }
+
+  .feedback-form__btn {
+    width: 236px;
+  }
 
 
-         /* Трассы и подъемники */
-         .slopes__img {
-          display: block;
-         }
-         .slopes__img-mob {
-          display: none;
-         }
-         .slopes__content {
-          flex-direction: column;
-          align-items: center;
-         }
-         .slopes__img {
-          width: 551px;
-          height: 519px;
-
-         }
+  /* Услуги */
 
 
+  .rent-property__content,
+  .ski-tours__content {
+    flex-direction: column-reverse;
+  }
 
-          /* О нас */
+  .rent-equipment__content,
+  .services-instructors__content {
+    flex-direction: column;
 
-        .about__item--top-direction {
-          flex-direction: column;
-          align-items: flex-start;
-        }
-        .about__item--top-direction p {
-          width: 404px;
-        }
-
-        .about__item--bot-direction {
-          flex-direction: column-reverse;
-          align-items: flex-end;
-        }
-        .about__item--bot-direction p {
-          width: 404px;
-          margin-right: 138px;
-        }
-        .contacts__block {
-          flex-direction: column;
-          align-items: center;
-        }
-        .contacts__map {
-          width: 568px;
-          height: 450px;
-        }
-        .contacts__content {
-          width: 568px;
-          height: 450px;
-        }
-        .rules__img-mobile-small {
-          display: block;
-          width: 517px;
-          height: 462px;
-        }
-        .rules__img-mobile  {
-          display: none;
-        }
-        .rules__content {
-          flex-direction: column-reverse;
-          align-items: center;
-        }
-        .rules__column {
-          gap: 20px;
-        }
+  }
+  .property-text,
+  .equipment-text,
+  .instructors-text,
+  .tours-text {
+    width: 463px;
+  }
 
 
-
-        /* Аренда оборудования */
-
-
-        .equipment-benefits__content img {
-          width: 371px;
-          height: 246px;
-        }
-        .equipment-price__text {
-          width: 348px;
-          height: 129px;
-        }
-        .equipment-price__item img {
-          width: 348px;
-          height: 399px;
-
-        }
+  /* Трассы и подъемники */
 
 
+  .slopes__img {
+  display: block;
+  }
 
+  .slopes__img-mob {
+  display: none;
+  }
+
+  .slopes__content {
+  flex-direction: column;
+  align-items: center;
+  }
+
+  .slopes__img {
+  width: 551px;
+  height: 519px;
+  }
+
+
+    /* О нас */
+
+
+  .about__item--top-direction {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about__item--top-direction p {
+    width: 404px;
+  }
+
+  .about__item--bot-direction {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+
+  .about__item--bot-direction p {
+    width: 404px;
+    margin-right: 138px;
+  }
+
+  .contacts__block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts__map {
+    width: 568px;
+    height: 450px;
+  }
+
+  .contacts__content {
+    width: 568px;
+    height: 450px;
+  }
+
+  .rules__img-mobile-small {
+    display: block;
+    width: 517px;
+    height: 462px;
+  }
+
+  .rules__img-mobile  {
+    display: none;
+  }
+
+  .rules__content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .rules__column {
+    gap: 20px;
+  }
+
+
+  /* Аренда оборудования */
+
+
+  .equipment-benefits__content img {
+    width: 371px;
+    height: 246px;
+  }
+
+  .equipment-price__text {
+    width: 348px;
+    height: 129px;
+  }
+
+  .equipment-price__item img {
+    width: 348px;
+    height: 399px;
+
+  }
+
+
+ /* События */
+
+
+  .event-new-year__content {
+    flex-direction: column-reverse;
+  }
 
     
 }
+
+
+
+
 
 @media screen and (max-width: 754px) {
   /* На устройства 480px*/
@@ -332,9 +427,11 @@
   .section-title {
     font-size: 40px;
   }
+
   .page-header__heading {
     font-size: 40px;
   }
+
   .service__item {
     width: 444px;
   }
@@ -344,44 +441,52 @@
     align-items: center;
     margin: auto;
     gap: 30px;
-
   }
+
   .feedback__content {
     width: 450px;
     height: 500px;
   }
+
   .feedback-form__opposite {
     flex-direction: column;
     gap: 0;
   }
+
   .feedback-form__row-submit {
     flex-direction: column;
     justify-content: space-between;
     height: 100px;
     width: 388px;
   }
+
   .feedback-form__title {
     margin-bottom: 20px;
     margin-top: 0;
   }
+
   .feedback-form__btn {
     width: 390px;
     height: 45px;
   }
+
   .checkbox__text  {
     margin-left: 0;
     width: 388px;
-
   }
+
   .feedback-form__terms {
     width: 400px;
   }
+
   .page-footer__nav {
     display: none;
   }
+
   .page-footer__bottom {
     display: none;
   }
+
   .page-footer__mobile {
     display: flex;
     height: 60px;
@@ -393,47 +498,59 @@
     height: 80px;
     align-items: center;
   }
+
   .page-footer-line {
     display: none;
   }
+
   .page-footer__sotial-media {
     width: 90px;
     align-items: center;
   }
 
+
   /* Услуги */
+
+
   .property-gallery__item--big {
     width: 214px;
     height: 353px;
-  
   }
+  
   .property-gallery__item-aside {
     width: 219px;
     height: 163px;
   }
+
   .rent-equipment__content img {
     width: 449px;
     height: 333px;
   }
+
   .services-instructors__content img {
     width: 449px;
     height: 298px;
   }
+
   .tours-gallery__item--big {
     width: 209px;
     height: 290px;
   }
+
   .tours-gallery__item--left {
     width: 224px;
     height: 129px;
   }
+
   .tours-gallery__item--bott {
     width: 458px;
     height: 279px;
   }
+
   .tours-gallery {
     grid-template-columns: 224px 209px;
   }
+
   .page-services__btn {
     width: 288px;
   }
@@ -446,105 +563,186 @@
     width: 451px;
     height: 425px;
   }
+
   .slopes__name {
     width: 450px;
     height: 521px;
     column-gap: 20px;
   }
+
   .slopes__item {
     width: 185px;
   }
+
   .elevators__block {
     width: 450px;
     height: 930px;
   }
+
   .elevators__item img {
     width: 328px;
     height: 443px;
   }
+
   .elevators__btn {
     width: 292px;
   }
+
   .slopes__info {
     max-width: 451px;
   }
 
 
-
-
 /* О нас */
 
 
-.about__item--top-direction {
-  flex-direction: column;
-  align-items: center;
-}
-.about__item img {
-  width: 450px;
-  height: 315px;
-}
-.about__item p {
-  width: 450px;
-  margin: auto;
-}
+  .about__item--top-direction {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.about__item {
-  margin-bottom: 40px;
-}
-.about__item--bot-direction {
-  flex-direction: column-reverse;
-  align-items: center;
-}
-.contacts__map {
-  width: 452px;
-  height: 300px;
-}
-.contacts__content {
-  width: 452px;
-  height: 450px;
-}
-.rules__img-mobile-small {
+  .about__item img {
+    width: 450px;
+    height: 315px;
+  }
 
-  width: 443px;
-  height: 414px;
-}
-.rules__item {
-  width: 443px;
+  .about__item p {
+    width: 450px;
+    margin: auto;
+  }
 
-}
+  .about__item {
+    margin-bottom: 40px;
+  }
 
- /* Аренда оборудования */
+  .about__item--bot-direction {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 
+  .contacts__map {
+    width: 452px;
+    height: 300px;
+  }
 
- .equipment-benefits__content {
-  flex-direction: column;
- }
+  .contacts__content {
+    width: 452px;
+    height: 450px;
+  }
 
- .equipment-benefits__content p {
-  width: 448px;
+  .rules__img-mobile-small {
+    width: 443px;
+    height: 414px;
+  }
 
- }
- .equipment-benefits__content img {
-  width: 448px;
-  height: 280px;
-}
+  .rules__item {
+    width: 443px;
+  }
 
 
-.equipment-price__content {
-  grid-template-columns: repeat(1, 355px);
-}
-.equipment-price__item img {
-  width: 355px;
-  height: 405px;
+  /* Аренда оборудования */
 
-}
-.equipment-price__text {
-  width: 355px;
-  height: 129px;
-}
-.equipment-price__descr {
-  width: 437px;
-}
+
+  .equipment-benefits__content {
+    flex-direction: column;
+  }
+
+  .equipment-benefits__content p {
+    width: 448px;
+
+  }
+  .equipment-benefits__content img {
+    width: 448px;
+    height: 280px;
+  }
+
+  .equipment-price__content {
+    grid-template-columns: repeat(1, 355px);
+  }
+
+  .equipment-price__item img {
+    width: 355px;
+    height: 405px;
+  }
+
+  .equipment-price__text {
+    width: 355px;
+    height: 129px;
+  }
+
+  .equipment-price__descr {
+    width: 437px;
+  }
+
+
+  /* События */
+
+
+
+  .event-start__block-content {
+    position: static;
+  }
+
+  .event-start__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .event-start__btn {
+    position: static;
+    margin-bottom: 30px;
+    width: 365px;
+  }
+
+  .event-new-year__btn {
+    width: 288px;
+  }
+
+  .event-start__block-content h2 {
+    font-size: 32px;
+    line-height: 130%;
+  }
+
+  .event-start__block-content li {
+    font-size: 16px;
+  }
+
+  .event-start__adapted-img {
+    width: 418px;
+    height: 250px;
+  }
+
+  .event-start__block-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 420px;
+    height: 600px;
+  }
+
+  .event-new-year__item {
+    width: 220px;
+    height: 125px;
+  }
+
+  .event-new-year__item--huge {
+    width: 420px;
+    height: 250px;
+  }
+
+  .event-new-year__item--big {
+    width: 180px;
+    height: 270px;
+  }
+
+  .event-new-year__gallery {
+    grid-template-columns: 220px 180px;
+  }
+
+  .event-new-year__text{
+    width: 420px;
+  }
+ 
 
 }
 
@@ -560,42 +758,51 @@
   .section-title {
     font-size: 34px;
   }
+
   .page-header__heading{
     font-size: 34px;
   }
+
   .service__item {
     width: 290px;
     height: 182px;
-
-
   }
+
   .service__item p {
     width: 240px;
   }
+
   .service__subtitle {
     margin-bottom: 5px;
   }
+
   .small-text {
     margin-top: 10px;
   }
+
   .events__item img {
   width: 300px;
   height: 250px;
   }
+
   .events__info {
     width: 250px;
     height: 231px;
     left: 28px;
   }
+
   .events__btn {
     margin-top: 10px;
   }
+
   .big-text {
     font-size: 16px;
   }
+
   .ski-pass__content p{
     width: 287px;
   }
+
   .feedback__content {
     width: 296px;
     height: 504px;
@@ -604,6 +811,7 @@
   .feedback-form__btn {
     width: 264px;
   }
+
   .checkbox__text  {
     margin-left: 0;
     width: 271px;
@@ -613,31 +821,38 @@
     align-items: flex-start;
     width: 271px;
   }
+
   .feedback__content {
     padding: 15px;
   }
+
   .feedback-form__terms {
     width: 271px;
   }
+
   .events {
     height: 800px;
   }
+
   .page-header__subtitle {
     text-align: center;
-
   }
+
   .ski-pass__img {
     width: 286px;
     height: 236px;
   }
 
+
   /* Услуги */
+
 
   .property-gallery {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
+
   .property-text,
   .equipment-text,
   .instructors-text,
@@ -648,27 +863,33 @@
   .property-gallery__item--big  {
     width: 219px;
   }
+
   .rent-equipment__content img {
     width: 287px;
     height: 214px;
   }
+
   .tours-gallery {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
+
   .tours-gallery__item--big {
     width: 285px;
     height: 370px;
   }
+
   .tours-gallery__item--left {
     width: 285px;
     height: 178px;
   }
+  
   .tours-gallery__item--bott {
     width: 285px;
     height: 178px;
   }
+
   .services-instructors__content img {
     width: 285px;
     height: 178px;
@@ -681,34 +902,41 @@
  .slopes__img {
   width: 290px;
   height: 270px;
-}
-.slopes__name {
-  grid-template-columns: repeat(1, 1fr);
-}
-.slopes {
-  height: 1790px;
-}
-.slopes__name {
+  }
+
+  .slopes__name {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .slopes {
+    height: 1790px;
+  }
+
+  .slopes__name {
+    width: 290px;
+    height: 1070px;
+  }
+
+  .slopes__info {
   width: 290px;
-  height: 1070px;
-}
-.slopes__info {
- width: 290px;
- margin-right: auto;
- margin-left: auto;
-}
-.elevators__block {
-  width: 289px;
-  height: 800px;
-}
-.elevators__item img {
-  width: 241px;
-  height: 332px;
-}
-.elevators__item {
-  padding: 20px;
-  height: 580px;
-}
+  margin-right: auto;
+  margin-left: auto;
+  }
+
+  .elevators__block {
+    width: 289px;
+    height: 800px;
+  }
+
+  .elevators__item img {
+    width: 241px;
+    height: 332px;
+  }
+
+  .elevators__item {
+    padding: 20px;
+    height: 580px;
+  }
 
 
 
@@ -720,31 +948,34 @@
     width: 293px;
     height: 193px;
   }
+
   .about__item p {
     width: 293px;
-
   }
+  
   .contacts__map {
     width: 293px;
     height: 214px;
   }
   .contacts__content {
     width: 293px;
-
   }
-  .rules__img-mobile-small {
 
+  .rules__img-mobile-small {
     width: 293px;
     height: 259px;
   }
+
   .rules__item {
     width: 293px;
     height: 220px;
     padding: 15px;
   }
+
   .rules__item p {
     width: 242px;
   }
+
   .rules__item h3 {
     margin: 10px 0 10px 0;
   }
@@ -754,34 +985,80 @@
 
 
 
+  .equipment-benefits__content p {
+    width: 279px;
+  }
 
- .equipment-benefits__content p {
-  width: 279px;
+  .equipment-benefits__content img {
+    width: 279px;
+    height: 184px;
+  }
 
- }
- .equipment-benefits__content img {
-  width: 279px;
-  height: 184px;
-}
+  .equipment-price__content {
+    grid-template-columns: repeat(1, 286px);
+  }
+
+  .equipment-price__item img {
+    width: 286px;
+    height: 320px;
+  }
+
+  .equipment-price__text {
+    width: 286px;
+    height: 145px;
+  }
+
+  .equipment-price__descr {
+    width: 286px;
+  }
+
+  .page-header__heading {
+    text-align: center;
+  }
 
 
-.equipment-price__content {
-  grid-template-columns: repeat(1, 286px);
-}
-.equipment-price__item img {
-  width: 286px;
-  height: 320px;
+/* События */
 
-}
-.equipment-price__text {
-  width: 286px;
-  height: 145px;
-}
-.equipment-price__descr {
-  width: 286px;
-}
-.page-header__heading {
-  text-align: center;
-}
+
+  .event-start__adapted-img {
+    width: 307px;
+    height: 200px;
+  }
+
+  .event-start__block-content li {
+    font-size: 14px;
+  }
+
+  .event-start__block-content {
+    width: 307px;
+    height: 600px;
+  }
+
+  .event-start__btn {
+    width: 260px;
+  }
+
+  .event-new-year__item--big {
+    display: none;
+  }
+
+  .event-new-year__gallery {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .event-new-year__item,
+  .event-new-year__item--huge {
+    width: 285px;
+    height: 180px;
+  }
+
+  .event-new-year__btn {
+    width: 285px;
+  }
+
+  .event-new-year__text{
+    width: 285px;
+  }
 
 }
