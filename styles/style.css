@@ -64,6 +64,13 @@ body {
     margin: 0;
     padding: 0 0 50px;  /*отступ снизу*/
 }
+.page-header__heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 0;
+}
 
 .section-subtitle {
     font-family: 'Cormorant Garamond', serif;
@@ -658,14 +665,19 @@ a {
     border: 1px solid var(--color-grey);
 }
 
-.equipment-price__text hr {
+.equipment-price__line {
     margin: 0;
     width: 120px;
     height: 1px;
+    border: 1px solid #AEAEAE;
 }
 
 .equipment-price__text p {
     color: #D6D6D6;
+}
+
+.equipment-price__descr {
+    width: 494px;
 }
 
 /* *** свойства для instructors.html *** */

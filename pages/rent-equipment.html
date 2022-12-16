@@ -13,6 +13,7 @@
 
     <!-- подключаем стили: -->
     <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="shortcut icon" href="../images/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/hamburgers.css">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/media.css">
@@ -179,7 +180,7 @@
             <div class="page-header__main-content">
                 <img class="page-header__logo" src="../images/logo-header.svg" alt="">
                 <h1 class="title">Ski-park</h1>
-                <h2 class="section-title">Аренда оборудования</h2>
+                <h2 class="page-header__heading">Аренда оборудования</h2>
             </div>
         </header>
     </div>
@@ -202,14 +203,14 @@
         <section class="equipment-price section-margin">
             <div class="container padding-left">
                 <h2 class="section-title">Цены на аренду</h2>
-                <p class="medium-text">В наличии всегда имееются все размеры оборудования. <br>
+                <p class="medium-text equipment-price__descr">В наличии всегда имееются все размеры оборудования. <br>
                     Вы всегда можете обратиться в отдел аренды инвентаря по приезду на наш курорт!</p>
                 <div class="equipment-price__content">
                     <div class="equipment-price__item">
                         <img src="../images/price-equipment-1.jpg" alt="">
                         <div class="equipment-price__text">
                             <h3 class="equipment-price__subtitle section-subtitle">Лыжный комплект взрослый</h3>
-                            <hr>
+                            <div class="equipment-price__line"></div>
                             <p class="medium-text">стоимость: 800 руб./час</p>
                         </div>    
                     </div>  
@@ -217,7 +218,7 @@
                         <img src="../images/price-equipment-2.jpg" alt="">
                         <div class="equipment-price__text">
                             <h3 class="equipment-price__subtitle section-subtitle">Комплект со соноубордом взрослый</h3>
-                            <hr>
+                            <div class="equipment-price__line"></div>
                             <p class="medium-text">стоимость: 800 руб./час</p>
                         </div>    
                     </div>  
@@ -225,7 +226,7 @@
                         <img src="../images/price-equipment-3.jpg" alt="">
                         <div class="equipment-price__text">
                             <h3 class="equipment-price__subtitle section-subtitle">Лыжный комплект детский</h3>
-                            <hr>
+                            <div class="equipment-price__line"></div>
                             <p class="medium-text">стоимость: 600 руб./час</p>
                         </div>    
                     </div> 
@@ -233,7 +234,7 @@
                         <img src="../images/price-equipment-4.jpg" alt="">
                         <div class="equipment-price__text">
                             <h3 class="equipment-price__subtitle section-subtitle">Комплект со соноубордом детский</h3>
-                            <hr>
+                            <div class="equipment-price__line"></div>
                             <p class="medium-text">стоимость: 600 руб./час</p>
                         </div>    
                     </div>
@@ -241,7 +242,7 @@
                         <img src="../images/price-equipment-5.jpg" alt="">
                         <div class="equipment-price__text">
                             <h3 class="equipment-price__subtitle section-subtitle">Шлемы</h3>
-                            <hr>
+                            <div class="equipment-price__line"></div>
                             <p class="medium-text">стоимость: 350 руб./час</p>
                         </div>    
                     </div>
@@ -249,7 +250,7 @@
                         <img src="../images/price-equipment-6.jpg" alt="">
                         <div class="equipment-price__text">
                             <h3 class="equipment-price__subtitle section-subtitle">Маски</h3>
-                            <hr>
+                            <div class="equipment-price__line"></div>
                             <p class="medium-text">стоимость: 300 руб./час</p>
                         </div>    
                     </div>
@@ -257,7 +258,7 @@
                         <img src="../images/price-equipment-7.jpg" alt="">
                         <div class="equipment-price__text">
                             <h3 class="equipment-price__subtitle section-subtitle">Лыжные палки</h3>
-                            <hr>
+                            <div class="equipment-price__line"></div>
                             <p class="medium-text">стоимость: 150 руб./час</p>
                         </div>    
                     </div>
@@ -265,7 +266,7 @@
                         <img src="../images/price-equipment-8.jpg" alt="">
                         <div class="equipment-price__text">
                             <h3 class="equipment-price__subtitle section-subtitle">Нательная защита</h3>
-                            <hr>
+                            <div class="equipment-price__line"></div>
                             <p class="medium-text">стоимость: 400 руб./час</p>
                         </div>    
                     </div>                        
@@ -281,21 +282,24 @@
                     <li><a href="../index.html">Главная</a></li>
                     <li><a href="services.html">Услуги</a></li>
                     <li><a href="about.html">О нас</a></li>
-                    <li><a href="services.html">Трассы</a></li>
+                    <li><a href="slopes.html">Трассы</a></li>
                     <li><a href="events.html">События</a></li>
-                    <li class="page-footer__lk flex-ai-center">
-                        <a href="">
+                    <li class="page-footer__lk ">
+                        <a class="flex-ai-center" href="">
                             Личный кабинет
                             <img src="images/icons/footer-lk.svg" alt="">
                         </a>
                     </li>
                 </ul>
             </nav>
+            <div class="page-footer__mobile flex-sb ">
+                    <a href="">8 800 8000 800</a>
+                    <a href=""><img src="../images/icons/footer-lk.svg" alt=""></a>
+            </div>
         </div>
-        <hr>
-        <div class="container">
-            <div class="page-footer__bottom">
-                <div class="padding-left flex-sb">
+        <div class="page-footer-line">
+            <div class="container ">
+                <div class="page-footer__bottom padding-left flex-sb">
                     <a href="">Политика конфиденциальности</a>
                     <div class="flex">
                         <a href="">8-800-8000-800</a>
@@ -320,8 +324,24 @@
                         </div>
                     </div>
                 </div>
+            </div> 
+        </div>
+        <div class="container">
+            <div class="page-footer__bottom-mobile flex-sb">
+                <a href="">Политика <br> конфиденциальности</a>
+                <div class="flex-sb page-footer__sotial-media">
+                    <a href="">
+                        <img src="../images/icons/footer-vk.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="../images/icons/footer-youtube.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="../images/icons/footer-telegram.svg" alt="">
+                    </a>
+                </div>
             </div>
-        </div>    
+        </div>
     </footer>
 </body>
 </html>
