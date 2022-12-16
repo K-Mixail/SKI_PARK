@@ -812,6 +812,10 @@ a {
     background-color: var(--color-green);
 }
 
+.event-start__adapted-img {
+    display: none;
+}
+
 .event-start h2 {
     padding-bottom: 0;
 }
