@@ -14,8 +14,12 @@
   /* Главная */
 
   .container {
-    padding: 0 15px ;
+    padding: 0 ;
     width: 100%;
+  }
+
+  .adapted__container {
+    padding: 0 15px;
   }
 
   .page-header--index-banner {
@@ -132,6 +136,10 @@
   gap: 20px;
   }
 
+  .adapted__container {
+    padding: 0 15px;
+  }
+
   .property-text,
   .equipment-text,
   .instructors-text {
@@ -148,6 +156,10 @@
 
   .slopes__img-mob {
   display: block;
+  }
+
+  .adapted__container {
+    padding: 0 15px;
   }
 
   .elevators__content {
@@ -172,6 +184,10 @@
     display: none;
   }
 
+  .adapted__container {
+    padding: 0 15px;
+  }
+
   .rules__content {
     justify-content: center;
     gap: 30px;
@@ -190,6 +206,10 @@
     gap: 30px;
   }
 
+  .adapted__container {
+    padding: 0 15px;
+  }
+
   .equipment-price__content {
     grid-template-columns: repeat(2, 355px);
     justify-content: center;
@@ -205,6 +225,10 @@
 
   .event-start__img {
     display: none;
+  }
+
+  .adapted__container {
+    padding: 0 15px;
   }
 
   .event-new-year__content {
@@ -228,6 +252,36 @@
 
   .event-new-year__gallery {
     grid-template-columns: 255px 205px;
+  }
+
+
+  /* Услуги инструкторов */
+
+  
+  .adapted__container {
+    padding: 0 15px;
+  }
+
+  .instructors-benefits__content {
+    gap: 10px;
+  }
+
+  .instructors-price__item {
+    width: 324px;
+  }
+
+  .instructors-price__item img {
+    width: 296px;
+    height: 188px;
+  }
+
+  .instructors-price__content {
+    justify-content: space-around;
+  }
+
+  .instructors__content {
+    grid-template-columns: repeat(2, 337px);
+    justify-content: center;
   }
 
 
@@ -411,6 +465,37 @@
     flex-direction: column-reverse;
   }
 
+
+  /* Услуги инструкторов */
+
+
+  .instructors-benefits__gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .instructors-benefits__gallery img {
+    width: 331px;
+    height: 180px;
+  }
+
+  .instructors-price__content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .instructors-price__item {
+    width: 350px;
+    height: 620px;
+  }
+
+  .instructors-price__item img {
+    width: 320px;
+    height: 207px;
+  }
+
     
 }
 
@@ -426,6 +511,20 @@
 
   .section-title {
     font-size: 40px;
+  }
+
+  .section-margin {
+    margin-bottom: 50px;
+  }
+
+  .events {
+    padding-top: 20px;
+    height: 830px;
+  }
+
+  .section-padding {
+    padding-top: 20px;
+    padding-bottom: 50px;
   }
 
   .page-header__heading {
@@ -741,6 +840,36 @@
 
   .event-new-year__text{
     width: 420px;
+  }
+
+
+  /* Услуги инструкторов */
+
+
+  .instructors-benefits__content {
+    flex-direction: column-reverse;
+  }
+
+  .instructors-benefits__gallery img {
+    width: 430px;
+    height: 250px;
+  }
+
+  .instructors-benefits__content p {
+    width: 430px;
+  }
+
+  .instructors__content {
+    grid-template-columns: repeat(1, 340px);
+  }
+
+  .instructors-price__btn {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 263px;
   }
  
 
@@ -1060,5 +1189,40 @@
   .event-new-year__text{
     width: 285px;
   }
+
+
+    /* Услуги инструкторов */
+
+
+  .instructors-benefits__gallery img {
+    width: 300px;
+    height: 180px;
+  }
+
+  .instructors-benefits__content p {
+    width: 300px;
+  }
+
+  .instructors-price__item {
+    width: 295px;
+    height: 620px;
+  }
+
+  .instructors-price__item img {
+    width: 263px;
+    height: 190px;
+  }
+
+  .instructors__item {
+    width: 300px;
+  }
+
+  .instructors__item img {
+    width: 300px;
+    height: 265px;
+  }
+  .instructors__content {
+    grid-template-columns: repeat(1, 300px);
+}
 
 }
