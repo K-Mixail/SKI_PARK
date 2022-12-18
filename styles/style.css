@@ -627,6 +627,9 @@ a {
     width: 519px;
     height: 668px;
 }
+.tour-extreme__img-adapted {
+    display: none;
+}
 
 /* services-instructors */
 .instructors-text {
@@ -980,6 +983,14 @@ a {
 .tour-snowmobile__btn {
     width: 260px;
     margin-top: 50px;
+}
+
+.tour-snowmobile__img-adapted {
+    display: none;
+}
+
+.tour__gap {
+    gap: 20px;
 }
 
 .tour-winter-relax {
