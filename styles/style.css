@@ -233,6 +233,10 @@ a {
 .page-header__col-menu {
     display: none;
 }
+
+.page-header__col-menu--border {
+    border: 1px var(--color-grey) solid;
+}
   
 .hamburger-inner, 
 .hamburger-inner::before, 
@@ -246,6 +250,16 @@ a {
 
 .page-header__toggle.is-active + .page-header__col-menu{
     display: none;
+}
+
+.hamburger-inner_change-color,
+.hamburger-inner_change-color::before, 
+.hamburger-inner_change-color::after,
+.hamburger__change-color.is-active .hamburger-inner_change-color,
+.hamburger__change-color.is-active .hamburger-inner_change-color::before,
+.hamburger__change-colorv.is-active .hamburger-inner_change-color::after {
+    background-color: var(--color-white);
+
 }
 
 /* page-header */

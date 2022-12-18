@@ -327,6 +327,13 @@
   }
 
 
+
+  /* 404 */
+
+  .page-404__img {
+    width: 650px;
+  }
+
 }
 
 
@@ -594,6 +601,15 @@
 
   .rent-house-price__item {
     flex-direction: column;
+  }
+
+
+  /* 404 */
+
+
+  .page-404__img {
+    width: 500px;
+    height: 541px;
   }
     
 }
@@ -1050,7 +1066,32 @@
   }
   .rent-house-price__info {
     padding: 0px 30px 30px 30px;
-}
+  }
+
+
+
+    /* 404 */
+
+
+
+  .page-404__block {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .page-404__content {
+    width: 400px;
+    text-align: center;
+  }
+
+  .page-404__btn {
+    width: 290px;
+  }
+
+  .page-404__img {
+    width: 400px;
+    height: 441px;
+  }
  
 
 }
@@ -1470,5 +1511,21 @@
   .rent-house-price__info {
     padding: 0px 30px 30px 30px;
   }
+
+
+   /* 404 */
+
+
+
+  .page-404__content {
+    width: 300px;
+
+  }
+
+  .page-404__img {
+    width: 300px;
+    height: 341px;
+  }
+ 
 
 }

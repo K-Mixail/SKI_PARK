@@ -74,12 +74,12 @@
 
     <div class="container">
         <header class="section-margin page-header page-header--404">
-            <button class="page-header__toggle hamburger hamburger--collapse" type="button" onclick="this.classList.toggle('is-active')">
+            <button class="page-header__toggle hamburger hamburger__change-color hamburger--collapse" type="button" onclick="this.classList.toggle('is-active')">
                 <span class="hamburger-box">
-                  <span class="hamburger-inner"></span>
+                  <span class="hamburger-inner hamburger-inner_change-color"></span>
                 </span>
               </button>
-            <nav class="page-header__col-menu">
+            <nav class="page-header__col-menu page-header__col-menu--border">
                 <ul class="page-header__col-list">
                     <li class="page-header__col-item"><a href="index.html">Главная страница</a></li>
                     <li class="page-header__col-item"><a href="pages/services.html">Услуги</a></li>
@@ -123,12 +123,12 @@
     </div>
        
     <section class="page-404">
-        <div class="container">
-            <div class="flex-sb">
+        <div class="container adapted__container">
+            <div class="flex-sb page-404__block">
                 <div class="page-404__content">
                     <h1 class="page-404__title">404</h1>
-                    <p class="page-404__subtitle">Page not found</p>
-                    <p class="big-text">The page you are looking for is not available</p>
+                    <p class="page-404__subtitle">Страница не найдена</p>
+                    <p class="big-text">Запрашиваемая вами страница не существует или была удалена.</p>
                     <a class="btn btn--primary page-404__btn" href="index.html">Вернуться на главную</a>
                 </div>
                 <img class="page-404__img" src="images/error-img.png" alt="">
