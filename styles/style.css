@@ -623,6 +623,10 @@ a {
     grid-column: span 1;
     grid-row: span 2;
 }
+.tour-extreme__img {
+    width: 519px;
+    height: 668px;
+}
 
 /* services-instructors */
 .instructors-text {
@@ -834,8 +838,14 @@ a {
     background-color: var(--color-dark);
 }
 
+.event-start__list {
+    margin-left: 30px;
+}
+
 .event-start__list li {
     margin-bottom: 15px;
+    font-size: 14px;
+    list-style-image: url(../images/icons/list-marker.svg);
 }
 
 .event-start__btn {
@@ -946,8 +956,25 @@ a {
   
 .faq-block__content {  
     display: none;   
-    margin: -25px 100px 20px 30px;
+    margin: -25px 100px 20px 50px;
     line-height: 130%;
+}
+
+.faq-block__content li {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.faq-list__markers li {
+
+    margin-top: 15px;
+    font-size: 14px;
+    list-style-type: none;
+    list-style-image: url(../images/icons/list-marker.svg);
+}
+
+.faq-block__content ol {
+    padding-left: 25px;
 }
 
 .tour-snowmobile__btn {
@@ -961,8 +988,15 @@ a {
 
 .tour-winter-relax__gallery {
     display: grid;
-    grid-template-columns: repeat(2, 300px);
+    grid-template-columns: repeat(2, 304px);
     gap: 20px;
+    width: 628px;
+    height: 785px;
+}
+
+.tour-snowmobile__img {
+    width: 553px;
+    height: 670px;
 }
 
 
