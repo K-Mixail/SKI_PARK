@@ -285,6 +285,39 @@
   }
 
 
+  /* Горнолыжные туры */
+
+
+  .tours-active__content {
+    gap: 20px;
+  }
+
+  .tour-snowmobile__img {
+    width: 470px;
+    height: 600px;
+  }
+
+  .tour-winter-relax__img {
+    width: 237px;
+    height: 316px;
+  }
+
+  .tour-winter-relax__img-big {
+    width: 492px;
+    height: 354px;
+  }
+  
+  .tour-winter-relax__gallery {
+    grid-template-columns: repeat(2, 237px);
+    height: 687px;
+  }
+
+  .tour-extreme__img {
+    width: 488px;
+    height: 668px;
+  }
+
+
 }
 
 
@@ -496,6 +529,46 @@
     height: 207px;
   }
 
+
+
+  /* Горнолыжные туры */ 
+
+  .tours-active img {
+    width: 375px;
+    height: 257px;
+  }
+
+  .tour-snowmobile__img {
+    display: none;
+  }
+
+  .tour-snowmobile__img-adapted {
+    display: block;
+  }
+
+  .tour-winter-relax__gallery {
+    width: 492px;
+  }
+
+  .tour-winter-relax__block {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .tour-extreme__img {
+    display: none;
+  }
+
+  .tour-extreme__img-adapted {
+    display: block;
+  }
+
+  .faq-list {
+    width: 392px;
+  }
+  .faq-list--change-width {
+    width: 492px;
+  }
     
 }
 
@@ -871,6 +944,58 @@
     text-align: center;
     width: 263px;
   }
+
+
+   /* Горнолыжные туры */ 
+
+  .tours-active__content img {
+    width: 450px;
+    height: 276px;
+  }
+
+  .tours-active__content {
+    flex-direction: column-reverse;
+  }
+
+  .tours-active__content p {
+    width: 450px;
+  }
+
+  .tour-snowmobile__img-adapted {
+    display: none;
+  }
+
+  .tour-snowmobile__img {
+    display: block;
+  }
+
+  .tour-snowmobile__block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faq-list {
+    width: 470px;
+  }
+
+  .tour-extreme__img-adapted {
+    display: none;
+  }
+
+  .tour-extreme__img {
+    display: block;
+    width: 470px;
+    height: 600px;
+  }
+
+  .tour-extreme__block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 290px;
+  }
  
 
 }
@@ -1221,8 +1346,58 @@
     width: 300px;
     height: 265px;
   }
+
   .instructors__content {
     grid-template-columns: repeat(1, 300px);
-}
+  }
+
+
+
+   /* Горнолыжные туры */ 
+
+
+  .tours-active__content img {
+    width: 290px;
+    height: 216px;
+  }
+
+   .tours-active__content p {
+    width: 290px;
+  }
+
+  .tour-snowmobile__img {
+    width: 290px;
+    height: 410px;
+  }
+  .faq-list {
+    width: 290px;
+  }
+
+  .faq-block__content {
+    display: none;
+    margin: -25px 30px 20px 40px;
+    line-height: 130%;
+  }
+
+  .tour-winter-relax__img {
+    width: 135px;
+    height: 180px;
+  }
+
+  .tour-winter-relax__img-big {
+    width: 290px;
+    height: 210px;
+  }
+  .tour-winter-relax__gallery {
+    grid-template-columns: repeat(2, 135px);
+    height: 420px;
+    width: 290px;
+    justify-content: center;
+  }
+
+  .tour-extreme__img {
+    width: 290px;
+    height: 395px;
+  }
 
 }

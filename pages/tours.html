@@ -187,7 +187,7 @@
 
     <div class="page-tours">
         <section class="tours-active section-margin section-padding">
-            <div class="container padding-left">
+            <div class="container padding-left adapted__container">
                 <h2 class="section-title">Действующие туры</h2>
                 <div class="tours-active__content flex-sb flex-ai-center">
                     <p class="medium-text">Раз мы находимся на Эльбрусе, здесь есть много классных мест,
@@ -201,10 +201,11 @@
         </section>
 
         <section class="tour-snowmobile section-margin">
-            <div class="container padding-left">
+            <div class="container padding-left adapted__container">
                 <h2 class="section-title">Путешествие на снегоходах</h2>
-                <div class="flex-sb">
+                <div class="flex-sb tour__gap tour-snowmobile__block">
                     <img class="tour-snowmobile__img" src="../images/tour-snowmobile.jpg" alt="">
+                    <img class="tour-snowmobile__img-adapted" src="../images/tour-snowmobile-adapted.jpg" alt="">
                     <div class="tour-snowmobile__content">
                         <ul class="faq-list">
                             <li class="faq-list__item faq-block">
@@ -264,11 +265,11 @@
         </section>
 
         <section class="tour-winter-relax section-margin section-padding">
-            <div class="container padding-left">
+            <div class="container padding-left adapted__container">
                 <h2 class="section-title">Тур “зимний отдых на Эльбрусе”</h2>
-                <div class="flex-sb">
+                <div class="flex-sb tour__gap tour-winter-relax__block">
                     <div class="tour-winter-relax__content">
-                        <ul class="faq-list">
+                        <ul class="faq-list faq-list--change-width">
                             <li class="faq-list__item faq-block">
                                 <div class="faq-block__toggle big-text flex-sb flex-ai-center" role="button" tabindex="0" onclick="this.parentElement.classList.toggle('is-open')">
                                     Описание тура <i class="faq-block__toggle-icon"></i>
@@ -335,19 +336,20 @@
                         <a class="btn btn--secondary tour-snowmobile__btn" href="">Узнать больше</a>
                     </div>
                     <div class="tour-winter-relax__gallery">
-                        <img src="../images/tour-winter-relax-1.jpg" alt="">
-                        <img src="../images/tour-winter-relax-2.jpg" alt="">
-                        <img src="../images/tour-winter-relax-3.jpg" alt="">
+                        <img class="tour-winter-relax__img" src="../images/tour-winter-relax-1.jpg" alt="">
+                        <img class="tour-winter-relax__img" src="../images/tour-winter-relax-2.jpg" alt="">
+                        <img class="tour-winter-relax__img-big" src="../images/tour-winter-relax-3.jpg" alt="">
                     </div>
                 </div>
             </div>      
         </section>
 
         <section class="tour-extreme section-margin">
-            <div class="container padding-left">
+            <div class="container padding-left adapted__container">
                 <h2 class="section-title">Тур “Экстремальный weekend”</h2>
-                <div class="flex-sb">
+                <div class="flex-sb tour__gap tour-extreme__block">
                     <img class="tour-extreme__img" src="../images/tour-extreme.jpg" alt="">
+                    <img class="tour-extreme__img-adapted" src="../images/tour-extreme-adapted.jpg" alt="">
                     <div class="tour-extreme__content">
                         <ul class="faq-list">
                             <li class="faq-list__item faq-block">
@@ -416,27 +418,30 @@
     </div>
     
     <footer class="page-footer">
-        <div class="container">
+        <div class="container adapted__container">
             <nav class="page-footer__nav padding-left">
                 <ul class="page-footer__main flex-sb">
                     <li><a href="../index.html">Главная</a></li>
                     <li><a href="services.html">Услуги</a></li>
                     <li><a href="about.html">О нас</a></li>
-                    <li><a href="services.html">Трассы</a></li>
+                    <li><a href="slopes.html">Трассы</a></li>
                     <li><a href="events.html">События</a></li>
-                    <li class="page-footer__lk flex-ai-center">
-                        <a href="">
+                    <li class="page-footer__lk ">
+                        <a class="flex-ai-center" href="">
                             Личный кабинет
                             <img src="images/icons/footer-lk.svg" alt="">
                         </a>
                     </li>
                 </ul>
             </nav>
+            <div class="page-footer__mobile flex-sb ">
+                    <a href="">8 800 8000 800</a>
+                    <a href=""><img src="../images/icons/footer-lk.svg" alt=""></a>
+            </div>
         </div>
-        <hr>
-        <div class="container">
-            <div class="page-footer__bottom">
-                <div class="padding-left flex-sb">
+        <div class="page-footer-line">
+            <div class="container adapted__container">
+                <div class="page-footer__bottom padding-left flex-sb">
                     <a href="">Политика конфиденциальности</a>
                     <div class="flex">
                         <a href="">8-800-8000-800</a>
@@ -461,8 +466,24 @@
                         </div>
                     </div>
                 </div>
+            </div> 
+        </div>
+        <div class="container adapted__container">
+            <div class="page-footer__bottom-mobile flex-sb">
+                <a href="">Политика <br> конфиденциальности</a>
+                <div class="flex-sb page-footer__sotial-media">
+                    <a href="">
+                        <img src="../images/icons/footer-vk.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="../images/icons/footer-youtube.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="../images/icons/footer-telegram.svg" alt="">
+                    </a>
+                </div>
             </div>
-        </div>    
+        </div>
     </footer>
 </body>
 </html>
