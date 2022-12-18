@@ -318,6 +318,15 @@
   }
 
 
+  /* Аренда жилья */
+
+
+
+  .rent-house-benefits__content {
+    gap: 30px;
+  }
+
+
 }
 
 
@@ -568,6 +577,23 @@
   }
   .faq-list--change-width {
     width: 492px;
+  }
+
+
+    /* Аренда жилья */
+
+
+
+  .rent-house-benefits__img {
+    display: none;
+  }
+
+  .rent-house-benefits__img-adapted {
+    display: block;
+  }
+
+  .rent-house-price__item {
+    flex-direction: column;
   }
     
 }
@@ -993,9 +1019,38 @@
     align-items: center;
   }
 
-  .btn {
+  .tour-snowmobile__btn {
     width: 290px;
   }
+
+
+
+   /* Аренда жилья */
+
+
+
+  .rent-house-benefits__img {
+    display: block;
+  }
+
+  .rent-house-benefits__img-adapted {
+    display: none;
+  }
+
+  .rent-house-benefits__content {
+    flex-direction: column-reverse;
+  }
+
+  .rent-house-benefits__img {
+    width: 425px;
+  }
+
+  .rent-house-benefits__info {
+    width: 425px;
+  }
+  .rent-house-price__info {
+    padding: 0px 30px 30px 30px;
+}
  
 
 }
@@ -1398,6 +1453,22 @@
   .tour-extreme__img {
     width: 290px;
     height: 395px;
+  }
+
+   /* Аренда жилья */
+
+
+
+  .rent-house-benefits__img {
+    width: 290px;
+  }
+
+  .rent-house-benefits__info {
+    width: 290px;
+  }
+
+  .rent-house-price__info {
+    padding: 0px 30px 30px 30px;
   }
 
 }
