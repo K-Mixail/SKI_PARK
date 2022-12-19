@@ -21,7 +21,7 @@
 
 <body>
     <nav class="sidebar">
-        <ul class="sidebar__column flex">
+        <ul class="sidebar__column flex" id="sidebar">
             <li class="sidebar__item sidebar__item--first">
                 <a href="../index.html">
                     <svg width="61" height="96" viewBox="0 0 66 83" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -258,7 +258,7 @@
                                 </div>
                             </li>
                         </ul>
-                        <a class="btn btn--primary tour-snowmobile__btn" href="">Узнать больше</a>
+                        <a class="btn btn--primary tour-snowmobile__btn" href="#popup">Записаться</a>
                     </div>
                 </div>
             </div>      
@@ -333,7 +333,7 @@
                                 </div>
                             </li>
                         </ul>
-                        <a class="btn btn--secondary tour-snowmobile__btn" href="">Узнать больше</a>
+                        <a class="btn btn--secondary tour-snowmobile__btn" href="#popup">Записаться</a>
                     </div>
                     <div class="tour-winter-relax__gallery">
                         <img class="tour-winter-relax__img" src="../images/tour-winter-relax-1.jpg" alt="">
@@ -410,11 +410,47 @@
                                 </div>
                             </li>
                         </ul>
-                        <a class="btn btn--primary tour-snowmobile__btn" href="">Узнать больше</a>
+                        <a class="btn btn--primary tour-snowmobile__btn" href="#popup">Записаться</a>
                     </div>
                 </div>
             </div>      
         </section>
+    </div>
+
+    <!--  Модальное окно -->
+    
+    <div id="popup" class="feedback-form-modal">
+        <a href="#sidebar" class="feedback-form-modal__area"></a>
+        <div class="feedback-form-modal__body">
+            <div class="feedback-form-modal__content">
+                <a href="#sidebar" class="feedback-form-modal__close"><img src="../images/icons/close-icon.svg" alt=""></a>
+                <form class="feedback-form feedback-form-modal__header" action="">
+                    <h3 class="feedback-form__title ">Мы перезвоним Вам в течении нескольких минут</h3>
+                    <div class="feedback-form__input">
+                        <input class="feedback-form__item " type="text" placeholder="Имя, Фамилия">     
+                    </div> 
+                    <div class="feedback-form__opposite flex-sb">
+                        <div class="feedback-form__input">     
+                            <input class="feedback-form__item feedback-form__item--mod-size" type="email" placeholder="Электронная почта">
+                        </div> 
+                        <div class="feedback-form__input">
+                            <input class="feedback-form__item feedback-form__item--mod-size" type="tel" placeholder="Телефон">
+                        </div>
+                    </div>
+                    <div class="feedback-form__input">                
+                        <textarea class="feedback-form__item feedback-form__item--textarea medium-text" name="" placeholder="Введите сообщение"></textarea>
+                    </div>
+                    <div class="feedback-form__row-submit flex-sb flex-ai-center">
+                        <button class="btn btn--secondary feedback-form__btn">Заказать звонок</button>
+                        <label class="feedback-form__terms flex checkbox">
+                            <input class="checkbox__input" type="checkbox" checked>
+                            <p class="checkbox__text">Согласие на обработку персональных данных</p>           
+                        </label>                           
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
     </div>
     
     <footer class="page-footer">

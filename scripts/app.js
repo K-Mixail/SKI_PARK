@@ -7,3 +7,4 @@ slides.forEach(function(slide) {
     imgElement.src = event.target.dataset.img;
   })
 })
+
