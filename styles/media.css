@@ -351,6 +351,10 @@
     display: none;
   }
 
+  .check:checked+::before {
+    display: none;
+  }
+
   .services__container {
     justify-content: center;
   }
