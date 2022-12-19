@@ -229,7 +229,7 @@
                             комната, полы с подогревом, бесплатный Wi-Fi и Netflix.
                         </p>
                         <p class="big-text">9000 Р / сутки</p>
-                        <a class="btn btn--primary rent-house-price__btn" href="">Забронировать</a>
+                        <a class="btn btn--primary rent-house-price__btn" href="#popup">Забронировать</a>
                     </div>
                 </div>
                 <div class="rent-house-price__item flex">
@@ -252,7 +252,7 @@
                             с холодильником, центральным камином и балкон.                    
                         </p>
                         <p class="big-text">14 000 Р / сутки</p>
-                        <a class="btn btn--primary rent-house-price__btn" href="">Забронировать</a>
+                        <a class="btn btn--primary rent-house-price__btn" href="#popup">Забронировать</a>
                     </div>
                 </div>
                 <div class="rent-house-price__item flex">
@@ -275,7 +275,7 @@
                             катания на лыжах.                          
                         </p>
                         <p class="big-text">20 000 Р / сутки</p>
-                        <a class="btn btn--primary rent-house-price__btn" href="">Забронировать</a>
+                        <a class="btn btn--primary rent-house-price__btn" href="#popup">Забронировать</a>
                     </div>
                 </div>
                 <div class="rent-house-price__item flex">
@@ -298,13 +298,89 @@
                             лыжах в течение всего дня. 
                         </p>
                         <p class="big-text">26 000 Р / сутки</p>
-                        <a class="btn btn--primary rent-house-price__btn" href="">Забронировать</a>
+                        <a class="btn btn--primary rent-house-price__btn" href="#popup">Забронировать</a>
                     </div>
                 </div>
             </div>                   
         </section>
     </div>
     
+<!--  Модальное окно -->
+    
+<div id="popup" class="feedback-form-modal">
+    <!-- <a href="#sidebar" class="feedback-form-modal__area"></a> -->
+    <div class="feedback-form-modal__body">
+        <div class="feedback-form-modal__content">
+            <a href="#sidebar" class="feedback-form-modal__close"><img src="../images/icons/close-icon.svg" alt=""></a>
+            <form class="feedback-form feedback-form-modal__header" action="#popup-submit">
+                <h3 class="feedback-form__title">Заполните форму</h3>
+                <div class="feedback-form__input">
+                    <input class="feedback-form__item " type="text" placeholder="Имя, Фамилия">     
+                </div> 
+                <div class="feedback-form__opposite flex-sb">
+                    <div class="feedback-form__input">     
+                        <input class="feedback-form__item feedback-form__item--mod-size" type="email" placeholder="Электронная почта">
+                    </div> 
+                    <div class="feedback-form__input">
+                        <input class="feedback-form__item feedback-form__item--mod-size" type="tel" placeholder="Телефон">
+                    </div>
+                </div>
+
+                <div class="feedback-form__input">
+                    <h3 class="">Количество человек</h3> 
+                    <select class="feedback-form__item" name="user_profile_color_1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                    </select>
+                </div>
+
+                <div class="feedback-form__input">
+                    <h3 class="">Дата заезда</h3>
+                    <input class="feedback-form__item" type="date" name="Date" id="davaToday">
+                </div>
+                
+                <div class="feedback-form__input">
+                    <h3 class="">Дата выезда</h3>
+                    <input class="feedback-form__item" type="date" name="Date" id="davaToday">
+                </div>
+
+                <div class="feedback-form__row-submit flex-sb flex-ai-center">
+                    <button class="btn btn--secondary feedback-form__btn">Отправить заявку</button>
+                    <label class="feedback-form__terms flex checkbox">
+                        <input class="checkbox__input" type="checkbox" checked>
+                        <p class="checkbox__text">Согласие на обработку персональных данных</p>           
+                    </label>                           
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="popup-submit" class="feedback-form-modal feedback-form-modal--submit">
+    <!-- <a href="#sidebar" class="feedback-form-modal__area"></a> -->
+    <div class="feedback-form-modal__body">
+        <div class="feedback-form-modal__content">
+            <a href="#sidebar" class="feedback-form-modal__close"><img src="../images/icons/close-icon.svg" alt=""></a>
+            <form class="feedback-form feedback-form-modal__header" action="rent-house.html">
+                <h3 class="feedback-form__title">Ваша заявка успешно отправлена. <br> Наш менеджер свяжется с Вами в ближайшее время.</h3>               
+                <div class="feedback-form__row-submit">
+                    <button class="btn btn--secondary feedback-form__btn">Закрыть</button>
+                </div>                
+            </form>
+        </div>
+    </div>
+</div>
+
     <footer class="page-footer">
         <div class="container adapted__container">
             <nav class="page-footer__nav padding-left">
@@ -373,5 +449,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="scripts/app.js"></script>
 </body>
 </html>
