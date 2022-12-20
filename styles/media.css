@@ -22,7 +22,15 @@
     padding: 0 15px;
   }
 
-  .page-header--index-banner {
+  .page-header--index-banner,
+  .page-header--about-banner,
+  .page-header--services-banner,
+  .page-header--rent-equipment-banner,
+  .page-header--instructors-banner,
+  .page-header--slopes-banner,
+  .page-header--events-banner,
+  .page-header--rent-house-banner,
+  .page-header--tours-banner {
      background-repeat: no-repeat;
   }
 
