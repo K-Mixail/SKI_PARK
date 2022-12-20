@@ -1057,7 +1057,7 @@ a {
 }
 
 
-
+/* Модальное окно */
 
 
 .feedback-form-modal__content {
@@ -1065,7 +1065,7 @@ a {
     padding: 30px;
     min-height: 400px;
     margin: auto;
-    border: 1px var(--color-green) solid;
+    border-radius: 4px;
     background-color: var(--color-dark);
     display: flex;
     align-items: center;
@@ -1128,3 +1128,64 @@ a {
     max-width: 400px;
 }
 
+/* Политика конфиденциальности */
+
+.privacy-policy ol {
+	list-style: none;
+	font-size: 16px;
+	padding: 0;
+	margin: 10px 0;
+}
+.privacy-policy li {
+	margin: 0;
+	padding: 0 0 10px 40px;
+	position: relative;
+	line-height: 20px;
+}
+.privacy-policy li::before {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 32px;
+	height: 32px;
+
+	text-align: center;
+	line-height: 32px;
+	font-size: 12px;
+	border-radius: 50%;
+}
+ 
+/* 1-й уровень */
+ol {
+	counter-reset: num;
+}
+ol > li {
+	counter-increment: num;
+}
+ol > li::before {
+	content: counter(num);
+
+}
+ 
+/* 2-й уровень */
+ol ol {
+	counter-reset: num2;
+}
+ol ol > li {
+	counter-increment: num2;
+}
+ol ol > li::before {
+	content: counter(num) '.' counter(num2);
+}
+ 
+/* 3-й уровень */
+ol ol ol {
+  counter-reset: num3;
+}
+ol ol ol > li {
+	counter-increment: num3;
+}
+ol ol ol > li::before {
+	content: counter(num) '.' counter(num2) '.' counter(num3);
+}
