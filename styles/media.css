@@ -1080,6 +1080,8 @@
     padding: 0px 30px 30px 30px;
   }
 
+ 
+
 
 
     /* 404 */
@@ -1522,6 +1524,13 @@
 
   .rent-house-price__info {
     padding: 0px 30px 30px 30px;
+  }
+
+  .rent-house-price__gen-info {
+    max-width: 250px;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: auto;
   }
 
 
