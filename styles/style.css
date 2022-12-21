@@ -1158,13 +1158,13 @@ a {
 }
  
 /* 1-й уровень */
-ol {
+.privacy-policy {
 	counter-reset: num;
 }
 ol > li {
 	counter-increment: num;
 }
-ol > li::before {
+.privacy-policy ol > .privacy-policy li::before {
 	content: counter(num);
 
 }
