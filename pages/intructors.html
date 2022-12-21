@@ -308,7 +308,7 @@
         <div class="feedback-form-modal__body">
             <div class="feedback-form-modal__content">
                 <a href="#sidebar" class="feedback-form-modal__close"><img src="../images/icons/close-icon.svg" alt=""></a>
-                <form class="feedback-form feedback-form-modal__header" action="">
+                <form class="feedback-form feedback-form-modal__header" action="#popup-submit">
                     <h3 class="feedback-form__title ">Мы перезвоним Вам в течении нескольких минут</h3>
                     <div class="feedback-form__input">
                         <input class="feedback-form__item " type="text" placeholder="Имя, Фамилия">     
@@ -332,6 +332,22 @@
                         </label>                           
                     </div>
                     
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="popup-submit" class="feedback-form-modal feedback-form-modal--submit">
+        <a href="#sidebar" class="feedback-form-modal__area"></a>
+        <div class="feedback-form-modal__body">
+            <div class="feedback-form-modal__content-sub">
+                <a href="#sidebar" class="feedback-form-modal__close"><img src="../images/icons/close-icon.svg" alt=""></a>
+                <form class="feedback-form feedback-form-modal__header" action="#sidebar">
+                    <h3 class="feedback-form__title">Ваша заявка успешно отправлена. <br> Наш менеджер свяжется с Вами в ближайшее время.</h3>               
+                    <div class="feedback-form__row-submit">
+                        <button class="btn btn--secondary feedback-form__btn">Закрыть</button>
+                    </div>                
                 </form>
             </div>
         </div>
