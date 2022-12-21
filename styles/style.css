@@ -1129,6 +1129,13 @@ a {
     max-width: 400px;
 }
 
+.feedback-form-modal__content-sub {
+    height: 250px;
+    background: var(--color-dark);
+    padding: 30px;
+    position: relative;
+}
+
 /* Политика конфиденциальности */
 
 .privacy-policy ol {

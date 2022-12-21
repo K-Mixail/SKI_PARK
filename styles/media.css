@@ -103,8 +103,17 @@
     height: 414px;
   }
 
+  .events__content {
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+  }
+
   .events__info {
     left: 70px;
+  }
+  .events {
+    height: 1500px;
   }
 
   .feedback__content {
@@ -372,14 +381,15 @@
     height: 174px;
   }
 
-  .events__item--hidden {
-    display: none;
-  }
-
   .ski-pass__img {
     width: 306px;
     height: 256px;
   } 
+
+  .events {
+    padding: 30px;
+    height: 1350px;
+  }
 
   .feedback img {
     display: none;
@@ -642,11 +652,6 @@
 
   .section-margin {
     margin-bottom: 50px;
-  }
-
-  .events {
-    padding-top: 20px;
-    height: 830px;
   }
 
   .section-padding {
@@ -1059,6 +1064,7 @@
 
   .rent-house-benefits__img {
     display: block;
+    width: 425px;
   }
 
   .rent-house-benefits__img-adapted {
@@ -1067,10 +1073,6 @@
 
   .rent-house-benefits__content {
     flex-direction: column-reverse;
-  }
-
-  .rent-house-benefits__img {
-    width: 425px;
   }
 
   .rent-house-benefits__info {
@@ -1195,7 +1197,7 @@
   }
 
   .events {
-    height: 800px;
+    height: 1100px;
   }
 
   .page-header__subtitle {
