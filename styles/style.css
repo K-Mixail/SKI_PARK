@@ -93,6 +93,13 @@ body {
     line-height: 130%;
 }
 
+.small-text--grey {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #A8A2A2;
+}
+
 .medium-text {
     font-weight: 400;
     font-size: 16px;
@@ -1305,7 +1312,6 @@ ol ol ol > li::before {
 
 .account_ski-pass-loss p {
     width: 240px;
-    font-size: 14px;
 }
 
 .account__pass-btn {
@@ -1316,9 +1322,10 @@ ol ol ol > li::before {
     width: 220px;
 }
 
-.small-text--grey {
+.tiny-text--grey {
     color: #A8A2A2;
     font-size: 12px; 
+    line-height: 130%;
 }
 
 .account__ski-pass-right {
@@ -1368,7 +1375,7 @@ ol ol ol > li::before {
     margin-top: 0;
 }
 
-/* ----------------Воход\рег\забыл------------- */
+/* ----------------Вход\рег\забыл------------- */
 .modal-registration {
     height: 500px;
     padding-top: 0;
