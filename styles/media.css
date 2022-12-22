@@ -364,6 +364,11 @@
     margin: auto;
     margin-bottom: 40px;
   }
+  
+  .loss-btn {
+    max-width: 17vw;
+    min-width: 150px;
+  }
 
 }
 
@@ -653,9 +658,11 @@
   margin-bottom: 40px;
 }
 
-.adapted__btn {
-width: 200px;
-}
+  .adapted__btn {
+  width: 200px;
+  }
+
+
 }
 
 
@@ -1228,6 +1235,12 @@ width: 200px;
   .account__booking-right img {
     display: none;
   }
+
+  .loss-btn{
+    max-width: none;
+    min-width: none;
+  }
+
 }
 
 
