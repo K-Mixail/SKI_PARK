@@ -22,6 +22,10 @@
     padding: 0 15px;
   }
 
+  .adapted__container h2 {
+    max-width: 420px;
+  }
+
   .page-header--index-banner,
   .page-header--about-banner,
   .page-header--services-banner,
