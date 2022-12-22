@@ -962,6 +962,7 @@ a {
   
 .faq-block.is-open .faq-block__toggle-icon {
     transform: rotate(45deg);  /*поворачиваем + превращая его в х*/
+    transition: 0.3s;
 }
 
 .faq-block__toggle {
