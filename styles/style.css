@@ -1150,7 +1150,7 @@ a {
 	position: relative;
 	line-height: 20px;
 }
-.privacy-policy li::before {
+ li::before {
 	display: inline-block;
 	position: absolute;
 	top: 0;
@@ -1171,8 +1171,9 @@ a {
 ol > li {
 	counter-increment: num;
 }
-.privacy-policy ol > .privacy-policy li::before {
+ ol > li::before {
 	content: counter(num);
+    margin: -5px;
 
 }
  
