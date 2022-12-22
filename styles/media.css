@@ -351,11 +351,17 @@
     width: 650px;
   }
 
+
+
+  /* ---------------------------Личный кабинет----------------------------- */ 
+
+  .adapted__size {
+    width: 990px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
 }
-
-
-
-
 
 @media screen and (max-width: 1010px) {
 
@@ -633,7 +639,19 @@
     width: 500px;
     height: 541px;
   }
-    
+ 
+  
+ /* ---------------------------Личный кабинет----------------------------- */ 
+
+ .adapted__size {
+  width: 95vw;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.adapted__btn {
+width: 200px;
+}
 }
 
 
@@ -1110,6 +1128,102 @@
   }
  
 
+    /* ---------------------------Личный кабинет----------------------------- */ 
+
+    .adapted__size {
+      display: inherit;
+      width: 95vw;
+      margin: auto;
+      margin-bottom: 40px;
+  }
+  
+  .account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .adaptive__title {
+    order: -1;
+  }
+
+  .account__info-box {
+    display: inline;
+  }
+
+  .account__info-top {
+    display: inline;
+  }
+  
+  .account__info {
+    margin-left: 20px;
+  }
+
+  .account:nth-child(3) {
+    order: 4;
+  }
+
+  .account__about-miself {
+    margin-left: 20px;
+  }
+
+  .account__ski-pass {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 40px;
+    order: -1;
+  }
+
+  .account_ski-pass-loss {
+    display: inline;
+  }
+
+  .account__ski-pass-right {
+    align-items: flex-start;
+    order: -1;
+    margin: 0;
+    margin: auto;
+  }
+
+  .account__ski-pass-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .skipass-title {
+    display: none;
+  }
+
+  .hide-title {
+    display: inline;
+    order: -1;
+    margin-left: 30px;
+  }
+
+  .account__card {
+    display: none;
+  }
+
+  .account__pass-btn {
+    width: 80vw;
+  }
+
+  .loss-btn {
+    width: 205px;
+  }
+
+  .account__booking {
+    display: inline;
+  }
+
+  .account__booking-content {
+    display: inline;
+  }
+
+  .account__booking-right img {
+    display: none;
+  }
 }
 
 
@@ -1550,5 +1664,145 @@
     height: 341px;
   }
  
+  /* ---------------------------Личный кабинет----------------------------- */ 
+
+  .adapted__size {
+    display: inherit;
+    width: 95vw;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+  .account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .adaptive__title {
+    order: -1;
+  }
+
+  .account__info-box {
+    display: inline;
+  }
+
+  .account__avatar {
+    width: 80vw;
+  }
+
+  .account__info-top {
+    display: inline;
+  }
+
+  .account:nth-child(3) {
+    order: 4;
+  }
+
+  .account__about-miself {
+    margin-left: 20px;
+  }
+
+  .account__ski-pass {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 40px;
+    order: -1;
+  }
+
+  .account_ski-pass-loss {
+    display: inline;
+    margin: 0;
+  }
+
+  .account__ski-pass-right {
+    align-items: flex-start;
+    order: -1;
+    margin: 0;
+    margin: auto;
+  }
+
+  .account__ski-pass-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-left: 25px;
+  }
+
+  .account__ski-pass-left  ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    flex-wrap: wrap
+  }
+
+  .adaptiv__pre-sell{
+    margin-left: 54vw;
+  }
+
+
+  .account__ski-pass-left  li{
+  border-bottom: 2px solid #A8A2A2;
+  /* border-top: 1px solid #A8A2A2; */
+  margin-right: 5px;
+  margin-top: 25px;
+  padding: 5px;
+  width: 25vw;
+  height: 50px;
+  display: flex;
+  /* Тут чтоб номер карты (№) был в линию */
+  /* flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; */
+  /* Тут чтоб номер карты (№) был в колонну */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .skipass-title {
+    display: none;
+  }
+
+  .hide-title {
+    display: inline;
+    order: -1;
+    margin-left: 30px;
+  }
+
+  .account__card {
+    display: none;
+  }
+
+  .account__pass-btn {
+    width: 80vw;
+  }
+
+  .loss-btn {
+    width: 80vw;
+  }
+
+  .account__booking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 30px;
+  }
+
+  .account__booking-content {
+    display: inline;
+    margin: 0;
+  }
+
+  .account__booking-right {
+    display: inline;
+  }
+
+  .account__booking-right img {
+    display: none;
+  }
 
 }

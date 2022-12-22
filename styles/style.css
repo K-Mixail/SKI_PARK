@@ -1197,3 +1197,169 @@ ol ol ol > li {
 ol ol ol > li::before {
 	content: counter(num) '.' counter(num2) '.' counter(num3);
 }
+
+
+/*page-LK*/
+.account__info-box {
+    position: relative;
+    width: 1090px;
+    padding-bottom: 40px;
+    border: 1px solid #D6D6D6;
+}
+
+.account__avatar {
+    padding: 35px 50px 10px 10px;
+}
+
+.account__info-top {
+    display: flex;
+    margin-left: 25px;
+}
+
+.account__about-miself {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.account__about-miself--grey {
+    color: #A8A2A2;
+    margin-right: 10px;
+}
+
+.account__about-miself p{
+    margin-bottom: 0;
+}
+
+.account__about-miself:first-child {
+    white-space:nowrap
+}
+
+.account__edit {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 1px;
+    stroke: #f0f7f6;
+    transition: stroke-width 1s, stroke-dashoffset 4s, stroke-dasharray 1s;
+}
+
+.account__edit:hover {
+    fill: #30E3CA;
+    color: #30E3CA;
+    stroke: #30E3CA;
+    stroke-width: 1px;
+    transition: all .3s ease;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+}
+
+.account__name {
+    border-bottom: 1px solid white;
+    width: max-content;
+    font-size: 26px;
+}
+
+.account__item {
+    padding-top: 25px;
+    color: #A8A2A2;
+}
+
+.white-text {
+    color: white;
+}
+
+.account__ski-pass {
+    margin-top: 40px;
+    width: 1090px;
+    height: 370px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #D6D6D6;
+}
+.hide-title {
+    display: none;
+}
+.account__ski-pass-left {
+    margin-left: 35px;
+}
+
+.account_ski-pass-loss{
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.account_ski-pass-loss p {
+    width: 240px;
+    font-size: 14px;
+}
+
+.account__pass-btn {
+    width: 220px;
+}
+
+.loss-btn {
+    width: 220px;
+}
+
+.small-text--grey {
+    color: #A8A2A2;
+    font-size: 12px; 
+}
+
+.account__ski-pass-right {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-right: 35px;
+    /* padding-top: 30px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.account__balance {
+    color: #A8A2A2;
+}
+
+.account__ski-pass-right--bold {
+    color: white;
+    font-weight: 600;
+}
+
+.account__booking {
+    margin-top: 40px;
+    width: 1090px;
+    padding-bottom: 40px;
+    border: 1px solid #D6D6D6;
+    padding-left: 35px;
+    margin-bottom: 120px;
+}
+
+.account__booking-right {
+    display: flex;
+    align-items: center;
+    width: 440px;
+    justify-content: space-between;
+}
+
+.account__booking-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-right: 35px;
+}
+
+.account__booking-info p{
+    margin-top: 0;
+}
