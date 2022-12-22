@@ -1002,6 +1002,9 @@
   .event-new-year__text{
     width: 420px;
   }
+  .events__btn {
+    width: 260px;
+  }
 
 
   /* Услуги инструкторов */
@@ -1556,6 +1559,12 @@
 
   .event-new-year__text{
     width: 285px;
+  }
+
+  .events__btn {
+    width: 200px;
+    position: absolute;
+    bottom: 30px;
   }
 
 
