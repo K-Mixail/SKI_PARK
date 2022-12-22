@@ -1112,8 +1112,8 @@ a {
 
 .feedback-form-modal__close {
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 15px;
+    top: 15px;
     font-size: 20px;
 }
 
