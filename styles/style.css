@@ -232,6 +232,8 @@ a {
 
 .page-header__col-menu {
     display: none;
+    z-index: 1;
+    border: var(--color-green) 2px solid;
 }
 
 .page-header__col-menu--border {
