@@ -1367,3 +1367,24 @@ ol ol ol > li::before {
 .account__booking-info p{
     margin-top: 0;
 }
+
+/* ----------------Воход\рег\забыл------------- */
+.modal-registration {
+    height: 500px;
+    padding-top: 0;
+}
+
+/* .thanks-for {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thanks-for-form {
+    align-self: center;
+}
+
+.thanks__button {
+ width: auto;
+} */

@@ -148,7 +148,7 @@
                     <li class="page-header__col-item"><a href="pages/intructors.html">Занятия с инструкторами</a></li>
                     <li class="page-header__col-item"><a href="pages/slopes.html">Трассы</a></li>
                     <li class="page-header__col-item"><a href="pages/events.html">События</a></li>
-                    <li class="page-header__col-item"><a href="pages/account.html">Личный кабинет</a></li>
+                    <li class="page-header__col-item"><a href="#popup-invite">Личный кабинет</a></li>
                 </ul>
                 <a class="btn btn--primary page-header__btn" href="">Заказать звонок</a>
             </nav>
@@ -167,7 +167,7 @@
                         <a href="pages/services.html">Услуги</a>
                     </li>
                     <li class="main-menu__item">
-                        <a href="">Личный кабинет</a>
+                        <a href="#popup-invite">Личный кабинет</a>
                     </li>
                     <li class="main-menu__item">
                         <a class="flex-ai-center" href="tel:+78008000800">
@@ -311,6 +311,106 @@
 
     <!--  Модальное окно -->
 
+    <div id="popup-invite" class="feedback-form-modal">
+        <a href="#sidebar" class="feedback-form-modal__area"></a>
+        <div class="feedback-form-modal__body">
+            <div class="feedback-form-modal__content">
+                <a href="#sidebar" class="feedback-form-modal__close"><img src="../images/icons/close-icon.svg" alt=""></a>
+                <form class="feedback-form feedback-form-modal__header" action="pages/account.html">
+                    <h3 class="feedback-form__title">Войти</h3>
+                    <div class="feedback-form__input">
+                        <input class="feedback-form__item " type="text" placeholder="email/логин" required>     
+                    </div> 
+                      <div class="feedback-form__input">
+                        <input class="feedback-form__item " type="password" placeholder="Пароль" required>     
+                    </div> 
+                    <div class="feedback-form__row-submit flex-sb flex-ai-center">
+                        <button class="btn btn--secondary feedback-form__btn">Войти</button>
+                        <label class="feedback-form__terms flex checkbox">
+                            <input class="checkbox__input" type="checkbox" required>
+                            <p class="checkbox__text small-text--grey ">Запомнить меня</p>           
+                        </label>                           
+                    </div>
+                    <div class="small-text--grey flex" style="padding-top: 20px;">
+                        <a class="small-text--grey" href="#popup-forget">Забыли пароль? </a>
+                         |
+                        <a class="small-text--grey" href="#popup-registration"> Регистрация</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="popup-registration" class="feedback-form-modal">
+        <a href="#sidebar" class="feedback-form-modal__area"></a>
+        <div class="feedback-form-modal__body">
+            <div class="feedback-form-modal__content modal-registration">
+                <a href="#sidebar" class="feedback-form-modal__close"><img src="../images/icons/close-icon.svg" alt=""></a>
+                <form class="feedback-form feedback-form-modal__header" action="#popup-submit1">
+                    <h3 class="feedback-form__title">Регистрация</h3>
+                    <div class="feedback-form__input">
+                        <input class="feedback-form__item " type="text" placeholder="email/логин" required>     
+                    </div> 
+                    <div class="feedback-form__input">
+                        <input class="feedback-form__item " type="password" placeholder="Пароль" required>     
+                    </div> 
+                    <div class="feedback-form__input">
+                        <input class="feedback-form__item " type="password" placeholder="Повторите пароль" required>     
+                    </div> 
+                    <div class="feedback-form__row-submit flex-col" style="justify-content:flex-start ;">
+                        <label class="feedback-form__terms flex checkbox">
+                            <input class="checkbox__input" type="checkbox" required>
+                            <p class="checkbox__text small-text--grey " style="width: 70vw;">Даю согласие на обработку персональных даннных</p>           
+                        </label>  
+                        <button class="btn btn--primary feedback-form__btn " style="margin-top:20px ;">Регистрация</button>                         
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="popup-submit1" class="feedback-form-modal feedback-form-modal--submit">
+        <a href="#sidebar" class="feedback-form-modal__area"></a>
+        <div class="feedback-form-modal__body">
+            <div class="feedback-form-modal__content-sub thanks-for">
+                <a href="#sidebar" class="feedback-form-modal__close"><img src="../images/icons/close-icon.svg" alt=""></a>
+                <form class="feedback-form feedback-form-modal__header thanks-for" action="#sidebar">
+                    <h3 class="feedback-form__title ">Спасибо за регистрацию!</h3>               
+                    <div class="feedback-form__row-submit thanks__button">
+                        <button class="btn btn--secondary feedback-form__btn ">Закрыть</button>
+                    </div>                
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="popup-forget" class="feedback-form-modal">
+        <a href="#sidebar" class="feedback-form-modal__area"></a>
+        <div class="feedback-form-modal__body">
+            <div class="feedback-form-modal__content">
+                <a href="#sidebar" class="feedback-form-modal__close"><img src="../images/icons/close-icon.svg" alt=""></a>
+                <form class="feedback-form feedback-form-modal__header" action="#popup-submit2">
+                    <h3 class="feedback-form__title">Восстановить пароль</h3>
+                    <div class="feedback-form__input">
+                        <input class="feedback-form__item " type="text" placeholder="email/телефон" required>     </div>
+                    <div class="feedback-form__row-submit flex-sb flex-ai-center" style="padding-top: 40px;">
+                        <button class="btn btn--primary feedback-form__btn">Восстановить</button>                         
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="popup-submit2" class="feedback-form-modal feedback-form-modal--submit">
+        <a href="#sidebar" class="feedback-form-modal__area"></a>
+        <div class="feedback-form-modal__body">
+            <div class="feedback-form-modal__content-sub">
+                <a href="#sidebar" class="feedback-form-modal__close"><img src="../images/icons/close-icon.svg" alt=""></a>
+                <form class="feedback-form feedback-form-modal__header " action="#sidebar">
+                    <h3 class="feedback-form__title ">Инструкция по восстановлению пароля отправлена на Ваш email, указанный при регистрации</h3>               
+                    <div class="feedback-form__row-submit">
+                        <button class="btn btn--secondary feedback-form__btn ">Закрыть</button>
+                    </div>                
+                </form>
+            </div>
+        </div>
+    </div>
 
     <div id="popup-submit" class="feedback-form-modal feedback-form-modal--submit">
         <a href="#sidebar" class="feedback-form-modal__area"></a>
