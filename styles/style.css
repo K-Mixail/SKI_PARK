@@ -1146,6 +1146,28 @@ a {
     position: relative;
 }
 
+/* Модальное окно для регистрации*/
+
+.popup-invite__link {
+    padding-top: 20px;
+}
+
+.popup-forget__link {
+    padding-top: 40px;
+}
+
+.checkbox__text--reg {
+    width: 70vw;
+}
+
+.feedback-form__row-submit--reg {
+    justify-content:flex-start ;
+}
+
+.feedback-form__btn--reg {
+    margin-top:20px;
+}
+
 /* Политика конфиденциальности */
 
 .privacy-policy ol {
@@ -1210,7 +1232,7 @@ ol ol ol > li::before {
 }
 
 
-/*page-LK*/
+/* *** page-LK *** */
 .account__info-box {
     position: relative;
     width: 1090px;

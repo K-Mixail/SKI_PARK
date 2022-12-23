@@ -346,7 +346,7 @@
                             <p class="checkbox__text tiny-text--grey">Запомнить меня</p>           
                         </label>                           
                     </div>
-                    <div class="small-text--grey flex-sb" style="padding-top: 20px;">
+                    <div class="popup-invite__link small-text--grey flex-sb">
                         <a class="small-text--grey" href="#popup-forget">Забыли пароль? </a>
                         <a class="small-text--grey" href="#popup-registration"> Регистрация</a>
                     </div>
@@ -359,7 +359,7 @@
         <div class="feedback-form-modal__body">
             <div class="feedback-form-modal__content modal-registration">
                 <a href="#sidebar" class="feedback-form-modal__close"><img src="images/icons/close-icon.svg" alt=""></a>
-                <form class="feedback-form feedback-form-modal__header" action="#popup-submit1">
+                <form class="feedback-form feedback-form-modal__header" action="#popup-submit-reg">
                     <h3 class="feedback-form__title">Регистрация</h3>
                     <div class="feedback-form__input">
                         <input class="feedback-form__item " type="text" placeholder="email/логин" required>     
@@ -370,18 +370,18 @@
                     <div class="feedback-form__input">
                         <input class="feedback-form__item " type="password" placeholder="Повторите пароль" required>     
                     </div> 
-                    <div class="feedback-form__row-submit flex-col" style="justify-content:flex-start ;">
+                    <div class="feedback-form__row-submit feedback-form__row-submit--reg flex-col">
                         <label class="feedback-form__terms flex checkbox">
                             <input class="checkbox__input" type="checkbox" required>
-                            <p class="checkbox__text tiny-text--grey" style="width: 70vw;">Даю согласие на обработку персональных даннных</p>           
+                            <p class="checkbox__text checkbox__text--reg tiny-text--grey">Даю согласие на обработку персональных даннных</p>           
                         </label>  
-                        <button class="btn btn--primary feedback-form__btn" style="margin-top:20px;">Регистрация</button>                         
+                        <button class="btn btn--primary feedback-form__btn feedback-form__btn--reg">Регистрация</button>                         
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    <div id="popup-submit1" class="feedback-form-modal feedback-form-modal--submit">
+    <div id="popup-submit-reg" class="feedback-form-modal feedback-form-modal--submit">
         <a href="#sidebar" class="feedback-form-modal__area"></a>
         <div class="feedback-form-modal__body">
             <div class="feedback-form-modal__content-sub thanks-for">
@@ -400,19 +400,19 @@
         <div class="feedback-form-modal__body">
             <div class="feedback-form-modal__content">
                 <a href="#sidebar" class="feedback-form-modal__close"><img src="images/icons/close-icon.svg" alt=""></a>
-                <form class="feedback-form feedback-form-modal__header" action="#popup-submit2">
+                <form class="feedback-form feedback-form-modal__header" action="#popup-submit-forget">
                     <h3 class="feedback-form__title">Восстановить пароль</h3>
                     <div class="feedback-form__input">
-                        <input class="feedback-form__item " type="text" placeholder="email/телефон" required>
+                        <input class="feedback-form__item" type="text" placeholder="email/телефон" required>
                     </div>
-                    <div class="feedback-form__row-submit flex-sb flex-ai-center" style="padding-top: 40px;">
+                    <div class="popup-forget__link feedback-form__row-submit flex-sb flex-ai-center">
                         <button class="btn btn--primary feedback-form__btn">Восстановить</button>                         
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    <div id="popup-submit2" class="feedback-form-modal feedback-form-modal--submit">
+    <div id="popup-submit-forget" class="feedback-form-modal feedback-form-modal--submit">
         <a href="#sidebar" class="feedback-form-modal__area"></a>
         <div class="feedback-form-modal__body">
             <div class="feedback-form-modal__content-sub">
