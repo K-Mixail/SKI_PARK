@@ -65,7 +65,7 @@
 </linearGradient>
 <linearGradient id="paint2_linear_578_2" x1="141.614" y1="150.492" x2="194.39" y2="284.472" gradientUnits="userSpaceOnUse">
 <stop stop-color="#119DA4"/>
-<stop offset="1" stop-color="#333333"/>
+<stop offset="1" stop-color="#707070"/>
 </linearGradient>
 <clipPath id="clip0_578_2">
 <rect width="23.3005" height="22.1639" fill="white" transform="translate(154.316 71.1057) rotate(24)"/>

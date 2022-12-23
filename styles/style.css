@@ -64,6 +64,13 @@ body {
     margin: 0;
     padding: 0 0 50px;  /*отступ снизу*/
 }
+.page-header__heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 0;
+}
 
 .section-subtitle {
     font-family: 'Cormorant Garamond', serif;
@@ -84,6 +91,13 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 130%;
+}
+
+.small-text--grey {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: #A8A2A2;
 }
 
 .medium-text {
@@ -181,13 +195,13 @@ a {
     background-color: var(--color-dark);
 }
 
-.sidebar__item--first {
-    margin: 0;
+.sidebar__column {
+    flex-direction: column;
+
+
 }
 
-svg {
-    margin: 20px;
-}
+
 
 .sidebar__item a:hover {
     fill: #30E3CA;
@@ -201,8 +215,8 @@ svg {
 
 
 .sidebar__item a {
-    margin: 20px;
     font-size: 14px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -225,6 +239,12 @@ svg {
 
 .page-header__col-menu {
     display: none;
+    z-index: 1;
+    border: var(--color-green) 2px solid;
+}
+
+.page-header__col-menu--border {
+    border: 1px var(--color-grey) solid;
 }
   
 .hamburger-inner, 
@@ -241,7 +261,18 @@ svg {
     display: none;
 }
 
+.hamburger-inner_change-color,
+.hamburger-inner_change-color::before, 
+.hamburger-inner_change-color::after,
+.hamburger__change-color.is-active .hamburger-inner_change-color,
+.hamburger__change-color.is-active .hamburger-inner_change-color::before,
+.hamburger__change-colorv.is-active .hamburger-inner_change-color::after {
+    background-color: var(--color-white);
+
+}
+
 /* page-header */
+
 .page-header {
     height: 616px;
     color: var(--color-dark);
@@ -345,7 +376,6 @@ svg {
     gap: 10px;
 }
 
-.events                             /*?????????????????????????????????????????????????????*/
 .check:checked+::before {  
     content: '';    
     z-index: -1;  
@@ -523,7 +553,7 @@ svg {
 .contacts__content {
     width: 548px;
     height: 450px;
-    border: 1px solid var(--color-white);
+    border: 1px solid var(--color-grey);
 }
 
 .contacts__social {
@@ -548,6 +578,12 @@ svg {
     height: 174px;
     padding-left: 34px;
     border: 1px solid var(--color-grey);
+}
+.rules__img-mobile {
+    display: none;
+}
+.rules__img-mobile-small {
+    display: none;
 }
 
 .rules__item p {
@@ -610,6 +646,13 @@ svg {
     grid-column: span 1;
     grid-row: span 2;
 }
+.tour-extreme__img {
+    width: 519px;
+    height: 668px;
+}
+.tour-extreme__img-adapted {
+    display: none;
+}
 
 /* services-instructors */
 .instructors-text {
@@ -652,14 +695,19 @@ svg {
     border: 1px solid var(--color-grey);
 }
 
-.equipment-price__text hr {
+.equipment-price__line {
     margin: 0;
     width: 120px;
     height: 1px;
+    border: 1px solid #AEAEAE;
 }
 
 .equipment-price__text p {
     color: #D6D6D6;
+}
+
+.equipment-price__descr {
+    width: 494px;
 }
 
 /* *** свойства для instructors.html *** */
@@ -794,6 +842,10 @@ svg {
     background-color: var(--color-green);
 }
 
+.event-start__adapted-img {
+    display: none;
+}
+
 .event-start h2 {
     padding-bottom: 0;
 }
@@ -812,8 +864,14 @@ svg {
     background-color: var(--color-dark);
 }
 
+.event-start__list {
+    margin-left: 30px;
+}
+
 .event-start__list li {
     margin-bottom: 15px;
+    font-size: 14px;
+    list-style-image: url(../images/icons/list-marker.svg);
 }
 
 .event-start__btn {
@@ -862,12 +920,16 @@ svg {
 }
 
 .rent-house-price__info {
-    border: 1px solid var(--color-white);
+    border: 1px solid var(--color-grey);
     padding: 0px 80px 30px 30px;
 }
 
 .rent-house-price__btn {
     width: 200px;
+}
+
+.rent-house-benefits__img-adapted {
+    display: none;
 }
 
 /* *** свойства для tours.html *** */
@@ -909,6 +971,7 @@ svg {
   
 .faq-block.is-open .faq-block__toggle-icon {
     transform: rotate(45deg);  /*поворачиваем + превращая его в х*/
+    transition: 0.3s;
 }
 
 .faq-block__toggle {
@@ -924,13 +987,38 @@ svg {
   
 .faq-block__content {  
     display: none;   
-    margin: -25px 100px 20px 30px;
+    margin: -25px 100px 20px 50px;
     line-height: 130%;
+}
+
+.faq-block__content li {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.faq-list__markers li {
+
+    margin-top: 15px;
+    font-size: 14px;
+    list-style-type: none;
+    list-style-image: url(../images/icons/list-marker.svg);
+}
+
+.faq-block__content ol {
+    padding-left: 25px;
 }
 
 .tour-snowmobile__btn {
     width: 260px;
     margin-top: 50px;
+}
+
+.tour-snowmobile__img-adapted {
+    display: none;
+}
+
+.tour__gap {
+    gap: 20px;
 }
 
 .tour-winter-relax {
@@ -939,8 +1027,15 @@ svg {
 
 .tour-winter-relax__gallery {
     display: grid;
-    grid-template-columns: repeat(2, 300px);
+    grid-template-columns: repeat(2, 304px);
     gap: 20px;
+    width: 628px;
+    height: 785px;
+}
+
+.tour-snowmobile__img {
+    width: 553px;
+    height: 670px;
 }
 
 
@@ -948,7 +1043,6 @@ svg {
 .page-header--404 {
     width: 100%;
     height: 50px;
-    background-color: #01A6AF;
 }
 
 /* .main-menu--404 {
@@ -966,4 +1060,364 @@ svg {
 .page-404__btn {
     width: 220px;
     margin-top: 50px;
+}
+
+.main-menu__item--change-color a {
+    color: var(--color-white);
+
+}
+
+
+/* Модальное окно */
+
+
+.feedback-form-modal__content {
+    max-width: 550px;
+    padding: 30px;
+    min-height: 400px;
+    margin: auto;
+    border-radius: 4px;
+    background-color: var(--color-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.4s ease 0s;
+    opacity: 0;
+    transform: translate(0px, -100%);
+}
+
+.feedback-form-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.4s ease 0s;
+}
+
+.feedback-form-modal:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.feedback-form-modal:target .feedback-form-modal__content {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.feedback-form-modal__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+}
+
+.feedback-form-modal__close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 20px;
+}
+
+.feedback-form-modal__area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.feedback-form-modal__header h3 {
+    max-width: 400px;
+}
+
+.feedback-form-modal__content-sub {
+    height: 250px;
+    background: var(--color-dark);
+    padding: 30px;
+    position: relative;
+}
+
+/* Модальное окно для регистрации*/
+
+.popup-invite__link {
+    padding-top: 20px;
+}
+
+.popup-forget__link {
+    padding-top: 40px;
+}
+
+.checkbox__text--reg {
+    width: 70vw;
+}
+
+.feedback-form__row-submit--reg {
+    justify-content:flex-start ;
+}
+
+.feedback-form__btn--reg {
+    margin-top:20px;
+}
+
+/* Политика конфиденциальности */
+
+.privacy-policy ol {
+	list-style: none;
+	font-size: 16px;
+	padding: 0;
+	margin: 10px 0;
+}
+.privacy-policy li {
+	margin: 0;
+	padding: 0 0 10px 40px;
+	position: relative;
+	line-height: 20px;
+}
+ li::before {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 32px;
+	height: 32px;
+
+	text-align: center;
+	line-height: 32px;
+	font-size: 12px;
+	border-radius: 50%;
+}
+ 
+/* 1-й уровень */
+.privacy-policy {
+	counter-reset: num;
+}
+ol > li {
+	counter-increment: num;
+}
+ ol > li::before {
+	content: counter(num);
+    margin: -5px;
+
+}
+ 
+/* 2-й уровень */
+ol ol {
+	counter-reset: num2;
+}
+ol ol > li {
+	counter-increment: num2;
+}
+ol ol > li::before {
+	content: counter(num) '.' counter(num2);
+}
+ 
+/* 3-й уровень */
+ol ol ol {
+  counter-reset: num3;
+}
+ol ol ol > li {
+	counter-increment: num3;
+}
+ol ol ol > li::before {
+	content: counter(num) '.' counter(num2) '.' counter(num3);
+}
+
+
+/* *** page-LK *** */
+.account__info-box {
+    position: relative;
+    width: 1090px;
+    padding-bottom: 40px;
+    border: 1px solid #D6D6D6;
+}
+
+.account__avatar {
+    padding: 35px 50px 10px 10px;
+}
+
+.account__info-top {
+    display: flex;
+    margin-left: 25px;
+}
+
+.account__about-miself {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.account__about-miself--grey {
+    color: #A8A2A2;
+    margin-right: 10px;
+}
+
+.account__about-miself p{
+    margin-bottom: 0;
+}
+
+.account__about-miself:first-child {
+    white-space:nowrap
+}
+
+.account__edit {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 1px;
+    stroke: #f0f7f6;
+    transition: stroke-width 1s, stroke-dashoffset 4s, stroke-dasharray 1s;
+}
+
+.account__edit:hover {
+    fill: #30E3CA;
+    color: #30E3CA;
+    stroke: #30E3CA;
+    stroke-width: 1px;
+    transition: all .3s ease;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+}
+
+.account__name {
+    border-bottom: 1px solid white;
+    width: max-content;
+    font-size: 26px;
+}
+
+.account__item {
+    padding-top: 25px;
+    color: #A8A2A2;
+}
+
+.white-text {
+    color: white;
+}
+
+.account__ski-pass {
+    margin-top: 40px;
+    width: 1090px;
+    height: 370px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #D6D6D6;
+}
+.hide-title {
+    display: none;
+}
+.account__ski-pass-left {
+    margin-left: 35px;
+}
+
+.account_ski-pass-loss{
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.account_ski-pass-loss p {
+    width: 240px;
+}
+
+.account__pass-btn {
+    width: 220px;
+}
+
+.loss-btn {
+    width: 220px;
+}
+
+.tiny-text--grey {
+    color: #A8A2A2;
+    font-size: 12px; 
+    line-height: 130%;
+}
+
+.account__ski-pass-right {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-right: 35px;
+    /* padding-top: 30px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.account__balance {
+    color: #A8A2A2;
+}
+
+.account__ski-pass-right--bold {
+    color: white;
+    font-weight: 600;
+}
+
+.account__booking {
+    margin-top: 40px;
+    width: 1090px;
+    padding-bottom: 40px;
+    border: 1px solid #D6D6D6;
+    padding-left: 35px;
+    margin-bottom: 120px;
+}
+
+.account__booking-right {
+    display: flex;
+    align-items: center;
+    width: 440px;
+    justify-content: space-between;
+}
+
+.account__booking-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-right: 35px;
+}
+
+.account__booking-info p{
+    margin-top: 0;
+}
+
+/* ----------------Вход\рег\забыл------------- */
+.modal-registration {
+    height: 500px;
+    padding-top: 0;
+}
+
+.thanks-for {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thanks-for-form {
+    align-self: center;
+}
+
+.thanks__button {
+ width: auto;
+}
+
+.reg__window {
+    width: 500px;
 }
