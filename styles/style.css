@@ -1403,7 +1403,7 @@ ol ol ol > li::before {
     padding-top: 0;
 }
 
-/* .thanks-for {
+.thanks-for {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1416,4 +1416,8 @@ ol ol ol > li::before {
 
 .thanks__button {
  width: auto;
-} */
+}
+
+.reg__window {
+    width: 500px;
+}
